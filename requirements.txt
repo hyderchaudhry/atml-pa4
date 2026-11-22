@@ -1,0 +1,7 @@
+# Keep the CUDA-enabled PyTorch supplied by Kaggle or the course environment.
+torch
+transformers==4.57.1
+huggingface_hub==0.36.2
+datasets>=3,<5
+numpy
+matplotlib
