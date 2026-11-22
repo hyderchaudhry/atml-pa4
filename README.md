@@ -1,10 +1,10 @@
 # ATML PA4 · Task 1
 
-Run the model-compression study on one CUDA GPU. The runner covers 18 conditions and writes evidence to `results/task1/`. Shared setup and experiment bookkeeping live in `common/`. The other task directories under `results/` are reserved for later work.
+Run the model-compression study on one or two CUDA GPUs. The runner covers 18 conditions and writes evidence to `results/task1/`. Shared setup and experiment bookkeeping live in `common/`. The other task directories under `results/` are reserved for later work.
 
 ## Run on Kaggle
 
-1. Enable **Internet** and a **GPU** in the notebook settings. Use the course environment lock if you have it. This checkout includes the course data repository’s dependency constraints. A separate full course environment lock was unavailable. The runner keeps Kaggle’s CUDA-enabled PyTorch, enforces Transformers 4.57.1 and huggingface_hub 0.36.2, and records the installed environment.
+1. Enable **Internet** and choose a two-GPU accelerator in the notebook settings for parallel scoring. Use the course environment lock if you have it. This checkout includes the course data repository’s dependency constraints. A separate full course environment lock was unavailable. The runner keeps Kaggle’s CUDA-enabled PyTorch, enforces Transformers 4.57.1 and huggingface_hub 0.36.2, and records the installed environment.
 2. In a fresh Kaggle notebook, run the cells below. Replace the URL in the first cell with your repository’s clone URL.
 3. Save `/kaggle/working/pa4/results/task1/` as Kaggle output. To continue a saved run in a new session, copy that directory, including its `cache/` subfolder and partial condition files, back to the same writable location after cloning. Use the same code, data, GPU type, and package versions for matched runs.
 
@@ -41,17 +41,23 @@ run("-m", "unittest", "discover", "-s", "tests", "-v")
 **Cell 4 · Run the full study when ready**
 
 ```python
-run("-m", "task1.run")
+import torch
+print([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])
+run("-m", "task1.run", "--gpus", "2")
 ```
+
+With two GPUs, GPU 0 scores WikiText-2 while GPU 1 scores C4. Both then work through alternating 128-example HellaSwag shards as each finishes its corpus. Each GPU holds a complete copy of the current condition. The runner merges scores in manifest order, including after a restart. Calibration, allocation selection and compression run on GPU 0. After scoring finishes on both devices, GPU 0 measures every prefill and decode latency with GPU 1 idle.
+
+Use `--gpus 1` for a single-GPU session. Use the same GPU count for every invocation sharing an output directory, including `--prepare-only`. Each condition records peak scoring memory per device, summed HellaSwag shard time, elapsed scoring time for the current invocation, and the device used for latency measurements.
 
 C4 streaming can take time. To reuse the prepared files already present in this workspace, attach `datasets/data/public_locked/` as a Kaggle input and use `python -m common.setup --public-assets /kaggle/input/YOUR-DATA/public_locked`. Setup checks the five Task 1 asset hashes before reuse. The course script prepares any remaining public assets it requires. Model and tokenizer downloads use Hugging Face’s cache and the exact base-model revision in [the source lock](configs/source_revisions.json).
 
 For a session split, freeze the plan first and then run one or more conditions. The runner includes the FP16 reference automatically. A later unrestricted invocation fills in the remaining conditions.
 
 ```bash
-python -m task1.run --prepare-only
-python -m task1.run --conditions p2_50 p3_50 q2_4 q3_4
-python -m task1.run
+python -m task1.run --gpus 2 --prepare-only
+python -m task1.run --gpus 2 --conditions p2_50 p3_50 q2_4 q3_4
+python -m task1.run --gpus 2
 ```
 
 A completed condition has an atomically written `result.json`. The runner skips completed conditions, reuses full-calibration statistics and the frozen plan, and checkpoints HellaSwag every 128 examples. A failed condition records the phase and error in its own `status.json`. Preserve the entire output directory when moving between sessions. The same commands accept `--output PATH` for a separate run.

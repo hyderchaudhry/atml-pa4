@@ -1,10 +1,12 @@
 """Offline smoke tests with a randomly initialized miniature Qwen. No downloads or persistent results."""
 
+import copy
 import itertools
 import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
 import torch
@@ -95,6 +97,62 @@ class CompressionSmoke(unittest.TestCase):
         self.assertEqual(
             full, {"fp16", "p1_50", "p2_50", "p3_50", "q1_3", "q1_4", "q2_3", "q2_4", "q3_3", "q3_4"}
         )
+
+    @torch.inference_mode()
+    def check_parallel_scoring(self, first_device, second_device):
+        torch.set_num_threads(1)
+        seed_all(6304)
+        cfg = Qwen2Config(
+            vocab_size=32,
+            hidden_size=16,
+            intermediate_size=32,
+            num_hidden_layers=1,
+            num_attention_heads=2,
+            num_key_value_heads=1,
+            tie_word_embeddings=True,
+        )
+        model = Qwen2ForCausalLM(cfg).half().eval().to(first_device)
+        replica = copy.deepcopy(model).to(second_device)
+        windows = [{"source_row": i, "token_offset": 0, "token_ids": [2, i + 1, 3, 8]} for i in range(2)]
+        study = Study(model, collect(model, windows, [1]))
+        seqs = [[2, 3, choice] for choice in range(4)]
+        items = [
+            dict(id=i, choices=["a", "b", "c", "d"], gold=i % 4, prefix=2, ids=seqs) for i in range(131)
+        ]
+        suites = {"wikitext2_test": windows, "c4_validation": windows}
+        c = next(c for c in CONDITIONS if c.name == "p2_50")
+        with tempfile.TemporaryDirectory() as temp:
+            single, dual = (Path(temp) / name for name in ("single", "dual"))
+            kwargs = dict(bench_kwargs=dict(lengths=(3,), steps=1, reps=1, warmups=1))
+            args = (study, c, {}, suites, items, [1, 2, 3])
+            execute(*args, single, **kwargs)
+            # Interrupt after scoring to exercise resuming the two workers' saved shards.
+            with patch("task1.run.benchmark", side_effect=RuntimeError("synthetic interruption")):
+                with self.assertRaisesRegex(RuntimeError, "synthetic interruption"):
+                    execute(*args, dual, replica=replica, **kwargs)
+            with patch("task1.quality.hellaswag", side_effect=AssertionError("unexpected re-scoring")):
+                execute(*args, dual, replica=replica, **kwargs)
+            for suite in (*suites, "hellaswag"):
+                path = Path(c.name) / (suite + ".jsonl.gz")
+                a, b = (read_rows(d / path) for d in (single, dual))
+                self.assertEqual([r["id"] for r in a], [r["id"] for r in b])
+                key = "scores" if suite == "hellaswag" else "nll_sum"
+                np.testing.assert_allclose(
+                    [r[key] for r in a], [r[key] for r in b], rtol=1e-4, atol=1e-4
+                )
+            for source, dest in zip(model.parameters(), replica.parameters()):
+                torch.testing.assert_close(source.cpu(), dest.cpu(), rtol=0, atol=0)
+            result = json.loads((dual / c.name / "result.json").read_text())
+            self.assertEqual(result["quality"]["hellaswag"]["n"], len(items))
+            self.assertEqual(result["benchmark_device"], first_device)
+            self.assertEqual(set(result["quality_peak_bytes_by_device"]), {first_device, second_device})
+
+    def test_two_worker_scoring_and_resume(self):
+        self.check_parallel_scoring("cpu", "cpu")
+
+    @unittest.skipUnless(torch.cuda.device_count() >= 2, "requires two CUDA devices")
+    def test_two_cuda_devices(self):
+        self.check_parallel_scoring("cuda:0", "cuda:1")
 
     @torch.inference_mode()
     def test_pipeline(self):

@@ -16,7 +16,8 @@ from common.runtime import atomic_path, digest, read_rows, save_json, save_rows,
 from common.setup import DATA, DATA_COMMIT, RESULTS, REVISIONS, ROOT, SEED, task1_hashes
 from .calibration import collect
 from .data import SUITES, load_data
-from .evaluation import benchmark, hellaswag, perplexity, prepare_choices
+from .evaluation import benchmark, prepare_choices
+from .quality import evaluate_quality
 from .protocol import ALPHAS, BITS, CONDITIONS, GROUP, POSITIONS, REPETITIONS, STRENGTHS, WARMUPS
 from .reporting import summarize
 from .study import Study
@@ -85,7 +86,7 @@ def frozen_plan(study, development, out):
     return plan
 
 
-def execute(study, condition, plan, suites, items, prompt, out, bench_kwargs=None):
+def execute(study, condition, plan, suites, items, prompt, out, bench_kwargs=None, replica=None):
     d = out / condition.name
     d.mkdir(parents=True, exist_ok=True)
     study.restore()
@@ -103,44 +104,17 @@ def execute(study, condition, plan, suites, items, prompt, out, bench_kwargs=Non
         save_json(d / "projections.json", projections)
         phase = "quality"
         save_json(d / "status.json", {"status": "running", "phase": phase})
-        if gpu:
-            torch.cuda.reset_peak_memory_stats(device)
-        quality = {}
-        for suite, windows in suites.items():
-            with timed(seconds, suite, device):
-                quality[suite], rows = perplexity(study.model, windows)
-            save_rows(d / f"{suite}.jsonl.gz", rows)
+        models = [study.model]
+        if replica is not None:
+            secondary = next(replica.parameters()).device
+            with timed(seconds, "replica_copy", secondary):
+                replica.load_state_dict(study.model.state_dict())
+            models.append(replica)
         selected = items if condition.full_hellaswag else items[:512]
-        # A disconnected notebook can resume the longest quality suite within a condition.
-        partial = d / "partial_hellaswag"
-        rows = []
-        seconds["hellaswag"] = 0.0
-        shard_peaks = []
-        for first in range(0, len(selected), 128):
-            batch = selected[first : first + 128]
-            shard = partial / f"{first:04d}.json"
-            if shard.exists():
-                entry = json.loads(shard.read_text())
-            else:
-                clock = {}
-                with timed(clock, "seconds", device):
-                    _, scored = hellaswag(study.model, batch)
-                entry = dict(
-                    clock,
-                    rows=scored,
-                    peak_bytes=torch.cuda.max_memory_allocated(device) if gpu else None,
-                )
-                save_json(shard, entry)
-            if [r["id"] for r in entry["rows"]] != [r["id"] for r in batch]:
-                raise ValueError("Partial HellaSwag IDs differ from the frozen selection")
-            rows.extend(entry["rows"])
-            seconds["hellaswag"] += entry["seconds"]
-            if gpu:
-                shard_peaks.append(entry["peak_bytes"])
-        quality["hellaswag"] = {k: sum(r[k] for r in rows) / len(rows) for k in ("acc", "acc_norm")}
-        quality["hellaswag"]["n"] = len(rows)
-        save_rows(d / "hellaswag.jsonl.gz", rows)
-        quality_peak = max([torch.cuda.max_memory_allocated(device), *shard_peaks]) if gpu else None
+        with timed(seconds, "quality_wall_this_invocation", device):
+            quality, scoring_seconds, peaks_by_device = evaluate_quality(models, suites, selected, d)
+        seconds.update(scoring_seconds)
+        quality_peak = max((p for p in peaks_by_device.values() if p is not None), default=None)
         phase = "benchmark"
         timing = benchmark(study.model, prompt, **(bench_kwargs or {}))
         peaks = [v["peak_allocated_bytes"] for k, v in timing.items() if k.isdigit() and gpu]
@@ -154,11 +128,13 @@ def execute(study, condition, plan, suites, items, prompt, out, bench_kwargs=Non
                 "timing": timing,
                 "compression_peak_bytes": compression_peak,
                 "quality_peak_bytes": quality_peak,
+                "quality_peak_bytes_by_device": peaks_by_device,
+                "benchmark_device": str(device),
                 "inference_peak_bytes": max(peaks, default=None),
             },
         )
         save_json(d / "status.json", {"status": "complete"})
-        shutil.rmtree(partial, ignore_errors=True)
+        shutil.rmtree(d / "partial_hellaswag", ignore_errors=True)
     except Exception as exc:
         save_json(
             d / "status.json",
@@ -168,15 +144,21 @@ def execute(study, condition, plan, suites, items, prompt, out, bench_kwargs=Non
 
 
 @torch.inference_mode()
-def run(out, requested, prepare_only):
+def run(out, requested, prepare_only, gpus=1):
     if not torch.cuda.is_available():
         raise RuntimeError("Enable a Kaggle GPU accelerator for the real study")
+    if gpus > torch.cuda.device_count():
+        raise RuntimeError(
+            f"--gpus {gpus} requested, but PyTorch sees {torch.cuda.device_count()} CUDA GPUs"
+        )
     seed_all(SEED)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
     device = torch.device("cuda:0")
     out.mkdir(parents=True, exist_ok=True)
     cfg = protocol(DATA, device)
+    cfg["quality_devices"] = [torch.cuda.get_device_name(i) for i in range(gpus)]
+    cfg["benchmark_device"] = str(device)
     manifest = out / "protocol.json"
     if manifest.exists() and json.loads(manifest.read_text()) != cfg:
         raise RuntimeError("Saved protocol differs. Use a fresh --output directory for the new run.")
@@ -197,13 +179,17 @@ def run(out, requested, prepare_only):
         summarize(out, read_rows(choice_cache))
         return
     revision = cfg["sources"]["revisions"]["model_base"]
-    model = (
-        AutoModelForCausalLM.from_pretrained(
-            cfg["model"], revision=revision, dtype=torch.float16, attn_implementation="sdpa"
+
+    def load_model(target):
+        return (
+            AutoModelForCausalLM.from_pretrained(
+                cfg["model"], revision=revision, dtype=torch.float16, attn_implementation="sdpa"
+            )
+            .to(target)
+            .eval()
         )
-        .to(device)
-        .eval()
-    )
+
+    model = load_model(device)
     cache = out / "cache/calibration.pt"
     if not cache.exists():
         print("Collecting calibration statistics", flush=True)
@@ -236,6 +222,10 @@ def run(out, requested, prepare_only):
         items = prepare_choices(tokenizer, hs)
         save_rows(choice_cache, items)
     prompt = [token for row in cal[:4] for token in row["token_ids"]]
+    replica = load_model(torch.device("cuda:1")) if gpus == 2 else None
+    print(
+        f"Quality scoring on {gpus} GPU(s): {cfg['quality_devices']}. Benchmark on {device}.", flush=True
+    )
     failed = []
     for c in CONDITIONS:
         if requested and c.name not in requested and c.family != "fp16":
@@ -244,7 +234,7 @@ def run(out, requested, prepare_only):
             continue
         print(f"Running {c.name}", flush=True)
         try:
-            execute(study, c, plan, suites, items, prompt, out)
+            execute(study, c, plan, suites, items, prompt, out, replica=replica)
         except (RuntimeError, ValueError, ArithmeticError) as exc:
             failed.append(c.name)
             print(f"{c.name} failed: {exc}", flush=True)
@@ -259,13 +249,20 @@ def run(out, requested, prepare_only):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument(
+        "--gpus",
+        type=int,
+        choices=(1, 2),
+        default=1,
+        help="Number of GPUs for parallel quality scoring (default: 1). Timing uses GPU 0.",
+    )
     p.add_argument("--output", type=Path, default=RESULTS / "task1")
     p.add_argument("--conditions", nargs="+", choices=[c.name for c in CONDITIONS])
     p.add_argument(
         "--prepare-only", action="store_true", help="Freeze allocations without held-out scoring"
     )
     args = p.parse_args()
-    run(args.output, args.conditions, args.prepare_only)
+    run(args.output, args.conditions, args.prepare_only, args.gpus)
 
 
 if __name__ == "__main__":
