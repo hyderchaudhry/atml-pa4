@@ -5,7 +5,7 @@ Run the model-compression study on one or two CUDA GPUs. The runner covers 18 co
 ## Run on Kaggle
 
 1. Enable **Internet** and choose a two-GPU accelerator in the notebook settings for parallel scoring. Use the course environment lock if you have it. This checkout includes the course data repository’s dependency constraints. A separate full course environment lock was unavailable. The runner keeps Kaggle’s CUDA-enabled PyTorch, enforces Transformers 4.57.1 and huggingface_hub 0.36.2, and records the installed environment.
-2. In a fresh Kaggle notebook, run the cells below. Replace the URL in the first cell with your repository’s clone URL.
+2. Run cells 1 and 2 for the Task 1 smoke tests. Continue with cells 3 and 4 when you want to run the full experiment.
 3. Save `/kaggle/working/pa4/results/task1/` as Kaggle output. To continue a saved run in a new session, copy that directory, including its `cache/` subfolder and partial condition files, back to the same writable location after cloning. Use the same code, data, GPU type, and package versions for matched runs.
 
 **Cell 1 · Clone and enter your repository**
@@ -18,25 +18,67 @@ import sys
 
 repo = Path("/kaggle/working/pa4")
 if not repo.exists():
-    subprocess.run(["git", "clone", "YOUR_REPOSITORY_URL", str(repo)], check=True)
+    subprocess.run(["git", "clone", "https://github.com/hyderchaudhry/atml-pa4.git", str(repo)], check=True)
 os.chdir(repo)
 
 def run(*args):
     subprocess.run([sys.executable, *args], check=True)
 ```
 
-**Cell 2 · Install dependencies and prepare the locked data**
+**Cell 2 · Install dependencies and run the Task 1 smoke tests**
 
 ```python
 run("-m", "pip", "install", "-r", "requirements.txt")
-run("-m", "common.setup")
-```
-
-**Cell 3 · Smoke-test the implementation**
-
-```python
 run("-m", "unittest", "discover", "-s", "tests", "-v")
 ```
+
+The tests generate their own inputs and miniature Qwen weights. They run on CPU, with an additional test when two CUDA devices are visible. You can stop here after the tests pass.
+
+**Cell 3 · Prepare the course data for the full experiment**
+
+The assignment repo ignores `datasets/`. On Kaggle, the cell below creates a separate checkout of the instructor’s repo at the exact commit required by Task 1. Your local data-only commit can stay on your machine. To reuse its prepared files and save the C4 download, upload the contents of your local `datasets/data/public_locked/` as a Kaggle input and set `prepared_assets` to the mounted directory containing all seven `.jsonl.gz` files. Leave it as `None` to generate them from the saved revisions.
+
+The pinned instructor commit deleted `scripts/check_release_STAFF_LEGACY.py` but kept its checksum in `SHA256SUMS.json`. This causes `python -m common.setup` to stop at verification. The cell checks every other manifest entry, then validates the public-data counts and all five Task 1 asset hashes.
+
+```python
+import hashlib
+import json
+import shutil
+from common.setup import DATA, DATA_COMMIT, DATA_URL, REVISIONS, task1_hashes
+
+prepared_assets = None  # Or Path("/kaggle/input/YOUR-DATA/public_locked")
+
+if not DATA.exists():
+    subprocess.run(["git", "clone", DATA_URL, str(DATA)], check=True)
+    subprocess.run(["git", "-C", str(DATA), "checkout", "--detach", DATA_COMMIT], check=True)
+head = subprocess.check_output(["git", "-C", str(DATA), "rev-parse", "HEAD"], text=True).strip()
+if head != DATA_COMMIT:
+    raise ValueError(f"Use a fresh Kaggle assignment clone. Expected {DATA_COMMIT}, found {head}.")
+
+checks = json.loads((DATA / "SHA256SUMS.json").read_text())
+del checks["scripts/check_release_STAFF_LEGACY.py"]
+for name, expected in checks.items():
+    if hashlib.sha256((DATA / name).read_bytes()).hexdigest() != expected:
+        raise ValueError(f"Course file failed verification: {name}")
+
+lock = DATA / "data/local_source_revisions.json"
+if lock.exists() and json.loads(lock.read_text()) != json.loads(REVISIONS.read_text()):
+    raise ValueError("Existing data uses different source revisions. Use a fresh Kaggle assignment clone.")
+shutil.copyfile(REVISIONS, lock)
+locked = DATA / "data/public_locked"
+if prepared_assets is None:
+    run(str(DATA / "scripts/setup_data.py"), "--public")
+else:
+    task1_hashes(prepared_assets)
+    locked.mkdir(exist_ok=True)
+    for path in prepared_assets.glob("*_locked.jsonl.gz"):
+        shutil.copyfile(path, locked / path.name)
+
+run(str(DATA / "scripts/check_setup.py"))
+print("Verified Task 1 assets:", len(task1_hashes(locked)))  # Expected: 5
+```
+
+To run the instructor’s dataset tests too, use `run("-m", "unittest", "discover", "-s", "datasets/tests", "-v")` after cell 3.
 
 **Cell 4 · Run the full study when ready**
 
@@ -49,8 +91,6 @@ run("-m", "task1.run", "--gpus", "2")
 With two GPUs, GPU 0 scores WikiText-2 while GPU 1 scores C4. Both then work through alternating 128-example HellaSwag shards as each finishes its corpus. Each GPU holds a complete copy of the current condition. The runner merges scores in manifest order, including after a restart. Calibration, allocation selection and compression run on GPU 0. After scoring finishes on both devices, GPU 0 measures every prefill and decode latency with GPU 1 idle.
 
 Use `--gpus 1` for a single-GPU session. Use the same GPU count for every invocation sharing an output directory, including `--prepare-only`. Each condition records peak scoring memory per device, summed HellaSwag shard time, elapsed scoring time for the current invocation, and the device used for latency measurements.
-
-C4 streaming can take time. To reuse the prepared files already present in this workspace, attach `datasets/data/public_locked/` as a Kaggle input and use `python -m common.setup --public-assets /kaggle/input/YOUR-DATA/public_locked`. Setup checks the five Task 1 asset hashes before reuse. The course script prepares any remaining public assets it requires. Model and tokenizer downloads use Hugging Face’s cache and the exact base-model revision in [the source lock](configs/source_revisions.json).
 
 For a session split, freeze the plan first and then run one or more conditions. The runner includes the FP16 reference automatically. A later unrestricted invocation fills in the remaining conditions.
 
