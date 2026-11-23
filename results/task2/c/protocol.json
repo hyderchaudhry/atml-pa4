@@ -1,0 +1,87 @@
+{
+  "seed": 6304,
+  "code": {
+    "exact.py": "3deb9576f9318b28df6732ee026046b111587ad554cb72d5fedbb75fc4de5982",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retrieval.py": "4e6d678c0aec6bfb0bbdea4bcbd56a9be50b5f11fac59b777113a7e13cebcb69",
+    "recall.py": "10e05561fcd4ca5b0ecf9e7a44f09e540b86387cc2a87be509f67a747dfb2c8d",
+    "measure.py": "c73977fece0d9b3bd84c70546776c30fc0a2520ee4438f3aa7db3cb700972585",
+    "run.py": "13b1273e29eb6df1ef7ce97cfcd536366772d1b71efd15ad5f13fbb2f1ccde52",
+    "cache.py": "d6fdbf0f948e736e4870c3cebc6fe81889674494995c78c09ab0ef7740f68d21",
+    "report.py": "c2382cc598ce74515eb61156fc16226f1abee484983a2b7cd43b192cde03a424"
+  },
+  "cuda": "13.0",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.1",
+    "huggingface_hub": "0.36.2",
+    "numpy": "2.1.3"
+  },
+  "python": "3.13.16",
+  "tf32": false,
+  "course_commit": "6a0a9ec9da7ef3d313ee3036cfec493886723644",
+  "assets": {
+    "scripts/mqar_generator.py": "af69fe1cfd03a63ddbe2cc5844691bff138f06206bd94e8c7cb7aad93c727d08",
+    "data/mqar/mqar_development.jsonl.gz": "b960a5c503956afdb77edb43c9c89003ca5cbed07cca3ca65fbc71d50be5d9fd",
+    "data/mqar/mqar_test.jsonl.gz": "84925dc5f2b7a7e0b042fc354e5ec34435002b829a90b35813accd005ad4b549",
+    "data/kv_retrieval/kv_retrieval_cases.jsonl.gz": "6e2c12dae84805ed54666ff647a06e51d9412adde65729635ce07a0caa64fc13"
+  },
+  "revisions": {
+    "repos": {
+      "c4": "allenai/c4",
+      "wikitext": "Salesforce/wikitext",
+      "hellaswag": "Rowan/hellaswag",
+      "gsm8k": "openai/gsm8k",
+      "model_base": "Qwen/Qwen2.5-1.5B",
+      "model_target": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_draft": "Qwen/Qwen2.5-0.5B-Instruct"
+    },
+    "revisions": {
+      "c4": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
+      "wikitext": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "hellaswag": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "gsm8k": "740312add88f781978c0658806c59bc2815b9866",
+      "model_base": "8faed761d45a263340a0528343f099c05c9a4323",
+      "model_target": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "model_draft": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  },
+  "part": "c",
+  "settings": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "precision": "float16",
+    "attention": "sdpa",
+    "chat_template": "pinned tokenizer, one unmodified user message, add_generation_prompt=True",
+    "context_boundary": "first token overlapping final QUESTION_BEGIN marker",
+    "max_new_tokens": 16,
+    "extractor": "first standalone five-digit code",
+    "policies": [
+      "fp16",
+      "recent",
+      "question",
+      "token4",
+      "channel4",
+      "hybrid"
+    ],
+    "group_size": 64,
+    "sinks": 8,
+    "recent": 64,
+    "positions": "one int32 per selected position, shared across layers and heads",
+    "scoring": "mean FP32 causal suffix attention across layers, heads and suffix tokens",
+    "systems_lengths": [
+      2048,
+      4096
+    ],
+    "systems_batches": [
+      1,
+      8
+    ],
+    "warmups": 2,
+    "repetitions": 10,
+    "bootstrap": 2000
+  }
+}

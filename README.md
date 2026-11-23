@@ -1,6 +1,6 @@
-# ATML PA4 · Tasks 1 and 2
+# ATML PA4 · Tasks 1, 2 and 3
 
-Run the model-compression study on one or two CUDA GPUs. The runner covers 18 conditions and writes evidence to `results/task1/`. Shared setup and experiment bookkeeping live in `common/`. Task 2 has a separate [Kaggle workflow](#run-task-2-on-kaggle) and writes to `results/task2/`.
+Run the model-compression study on one or two CUDA GPUs. The runner covers 18 conditions and writes evidence to `results/task1/`. Shared setup and experiment bookkeeping live in `common/`. Task 2 has a separate [Kaggle workflow](#run-task-2-on-kaggle) and writes to `results/task2/`. [Run Task 3 on Kaggle](#run-task-3-on-kaggle) for draft-model distillation and exact speculative decoding. Its evidence goes in `results/task3/`.
 
 ## Run Task 1 on Kaggle
 
@@ -146,28 +146,39 @@ The smoke suite runs random miniature Qwen weights on CPU, checks masks, quantiz
 
 ## Run Task 2 on Kaggle
 
-Use a Kaggle notebook with Internet and two CUDA GPUs. Run the assignment-clone cell above, then install the same dependencies. Task 2 reads the frozen MQAR and KV retrieval assets directly from the course checkout. The runner clones it when absent and checks the four required file hashes against the manifest in the pinned instructor commit. You can also reuse a checkout containing your locally prepared Task 1 files.
+Use a Kaggle notebook with Internet and two CUDA GPUs. Run this setup cell first in each notebook session. It reuses the assignment checkout at the path below. Task 2 reads the frozen MQAR and KV retrieval assets directly from the course checkout. The runner clones it when absent and checks the four required file hashes against the manifest in the pinned instructor commit. You can also reuse a checkout containing your locally prepared Task 1 files.
 
 ```python
-run("-m", "pip", "install", "-r", "requirements.txt")
-run("-m", "unittest", "discover", "-s", "tests", "-p", "test_task2.py", "-v")
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+repo = Path("/kaggle/working/pa4")
+if not repo.exists():
+    subprocess.run(["git", "clone", "https://github.com/hyderchaudhry/atml-pa4.git", str(repo)], check=True)
+os.chdir(repo)
+if not Path("tests/test_task2.py").is_file():
+    raise FileNotFoundError("Use an assignment checkout containing Task 2 and its smoke tests.")
+subprocess.run([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"], check=True)
+subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_task2.py", "-v"], check=True)
 ```
 
 The offline smoke tests use synthetic tensors, a tiny random Qwen model, and temporary files. To run the experiments, use one notebook cell per part. Each invocation launches one independent worker per GPU. The notebook waits for both workers and builds that part’s evidence before returning.
 
 ```python
-run("-m", "task2.run", "--part", "a", "--gpus", "2")
+!python -m task2.run --part a --gpus 2
 ```
 
 ```python
-run("-m", "task2.run", "--part", "b", "--gpus", "2")
+!python -m task2.run --part b --gpus 2
 ```
 
 ```python
-run("-m", "task2.run", "--part", "c", "--gpus", "2")
+!python -m task2.run --part c --gpus 2
 ```
 
-For a single invocation, use `run("-m", "task2.run", "--part", "all", "--gpus", "2")`. Part B comprises **42 independent training runs and 189,000 optimizer updates**. Save the whole `results/task2/` directory as Kaggle output between sessions, copy it back to the writable clone, and repeat the same command. The runner skips completed shapes, training runs, retrieval cases and systems conditions. MQAR checkpoints include weights, optimizer, loss scaler and completed update number every 500 updates. Run one launcher per output directory.
+For a single invocation, use `!python -m task2.run --part all --gpus 2`. Part B comprises **42 independent training runs and 189,000 optimizer updates**. Save the whole `results/task2/` directory as Kaggle output between sessions, copy it back to the writable clone, and repeat the same command. The runner skips completed shapes, training runs, retrieval cases and systems conditions. MQAR checkpoints include weights, optimizer, loss scaler and completed update number every 500 updates. Run one launcher per output directory.
 
 | Part and output | Fixed experiment and saved evidence |
 | --- | --- |
@@ -193,3 +204,57 @@ The operator designs follow the manual’s FlashAttention, Longformer, linear-at
 - Prompt cleanup, conditional choice formatting and character normalization follow EleutherAI’s HellaSwag implementation. [Harness task, v0.4.8](https://github.com/EleutherAI/lm-evaluation-harness/tree/v0.4.8/lm_eval/tasks/hellaswag)
 - The pruning score and channel-rescaling methods follow the Wanda and AWQ papers. The projection-error sensitivity and constrained allocation rules are implemented here, informed by reconstruction-based post-training quantization. [Wanda](https://arxiv.org/abs/2306.11695) · [AWQ](https://arxiv.org/abs/2306.00978) · [BRECQ](https://arxiv.org/abs/2102.05426)
 - Model inference uses PyTorch and Hugging Face Transformers. Codex assisted with implementation and smoke tests. [Qwen2.5-1.5B base model](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+
+## Run Task 3 on Kaggle
+
+Start a fresh notebook with **Internet enabled** and the **GPU T4 ×2** accelerator. Use a revision of your assignment repository that contains `task3/run.py` and `tests/test_task3.py`. Both cells below use the notebook’s Python executable.
+
+**Cell 1 · Clone, install, and smoke-test**
+
+```python
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+repo = Path("/kaggle/working/pa4")
+if not repo.exists():
+    subprocess.run(["git", "clone", "https://github.com/hyderchaudhry/atml-pa4.git", str(repo)], check=True)
+os.chdir(repo)
+if not Path("task3/run.py").is_file():
+    raise FileNotFoundError("This checkout needs the revision containing Task 3.")
+
+def run(*args):
+    subprocess.run([sys.executable, *args], check=True)
+
+run("-m", "pip", "install", "-r", "requirements.txt")
+run("-c", "import torch; print([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())]); assert torch.cuda.device_count() >= 2, 'Select GPU T4 x2'")
+run("-m", "unittest", "discover", "-s", "tests", "-p", "test_task3.py", "-v")
+```
+
+Smoke tests use miniature models and temporary directories. They exercise the production sampler, loss and checkpoint path, paired timings, and evidence aggregation. The two-device test runs when both GPUs are visible. You can stop after this cell.
+
+**Cell 2 · Run the full study**
+
+```python
+run("-m", "task3.run", "--gpus", "2")
+```
+
+To run in stages, replace cell 2 with the same command plus, for example, `"--stage", "train"`. The stages in order are `validate`, `baseline`, `pool`, `train`, `banks`, `alignment`, `speed`, `quality`, and `report`. Each invocation completes outstanding prerequisites. A successful full run writes `results/task3/stages/report.json`. Save the **whole** `/kaggle/working/pa4/results/task3/` as Kaggle output. In a new session, restore that folder to the writable clone before rerunning cell 2. Keep the code, package versions and GPU configuration consistent. Training checkpoints include the adapter, optimizer, loss scaler, prompt cursors and token counts every eight completed updates and at the final update. Completed prompt files are reused. Allow disk space for four merged FP16 drafts (about 4 GB together), the original Hugging Face model cache, and raw evidence.
+
+**Data in a fresh clone.** Task 3 fetches the pinned instructor checkout into `datasets/` when absent. It verifies the short-form examples and GSM8K ID manifests against the instructor commit. It reuses prepared GSM8K files with the matching source-revision lock or loads the prescribed rows from the pinned GSM8K source. The assignment repository can therefore omit the instructor checkout and its generated binaries. The public-data setup in the Task 1 section also prepares the locked GSM8K rows. The runner uses complete instructor-generated prefix banks when present at `datasets/data/prefix_banks/prefix_banks_locked.jsonl.gz` alongside the matching `datasets/data/local_source_revisions.json`. Otherwise it calls the pinned instructor’s `setup_data.py` prefix-bank routine, with a compatibility adapter for its per-prompt random generator on Transformers 4.57.1. It saves the generated bank under `results/task3/banks/course/`. The exact-speculative control uses the same checkpoint generation settings as those course banks, including their repetition penalty.
+
+**How both GPUs are used.** Each GPU holds its own target and draft for timing. Both GPUs score different held-out prompts, with every draft and its adjacent target-only reference for a given prompt on the same GPU. During training, each worker owns a complete method/seed run. GPU 0 trains off-policy seed 6304 and on-policy seed 6305. GPU 1 trains the complementary pair. This preserves microbatch 1 and the global 256-scored-token update. Rollout preparation and standalone accuracy use batched generation. Timed requests run individually. The course bank materializer runs on one device while the other starts its own rollout banks. The final aggregation runs on CPU.
+
+| Evidence under `results/task3/` | Contents |
+| --- | --- |
+| `protocol.json`, `inputs/`, `checks/` | Revisions, environment, schedule, tokenized prompts and IDs, the 100,000-sequence Markov test and negative control, forced EOS/bonus/rollback cases, and real-model cache equivalence on each device. |
+| `teacher_pool/`, `students/`, `training.csv`, `loss.png` | Frozen teacher rollouts, four independent training histories, rollout seeds and termination, scored prefixes, overflow counts, resource costs, FP32 adapters, merged FP16 drafts, and logit-error checks. Each run scores 30,000 math and 10,000 short-form tokens in 156 full updates and a final 64-token update. |
+| `banks/`, `prefix_metrics/`, `alignment.csv` | The three common banks and four trained-student banks. All five drafts score the same saved prefix positions. Includes both KL directions, TV, expected acceptance and greedy agreement by workload and position. `target_spec_consistency.json` and `disagreements.json` contain paired controls and aligned examples. |
+| `speed/`, `costs/`, `per_prompt_speed.csv`, `speed_summary.csv` | Two paired repetitions at proposal lengths 2 and 4, a 64-token EOS-aware cap on all 120 prompts, and a fixed-64 diagnostic on the first 24 math prompts. Includes an unmerged adapter timing control, warmup, prefill, four synchronized round phases, host overhead, actual model calls, peak allocated bytes, measured and predicted speedup, and break-even acceptance. |
+| `quality/`, `standalone_accuracy.csv`, `standalone_contrasts.json` | Two standalone draft samples per prompt. Math uses a 512-token cap and the last numeric answer after the final `####` marker, falling back to the last number when the marker is absent. Short form uses 32 tokens, exact stripped answers and family-specific format checks. Outputs retain text, extracted answer, EOS and truncation. |
+| `paired_method_differences.csv`, `seed_dispersion.csv`, `aligned_continuations.json` | Paired prompt bootstrap intervals with 2,000 resamples, variation across training seeds, and matched-prompt generations. |
+
+The primary speedup is the per-prompt speculative tokens/second divided by the adjacent target-only tokens/second, including prefill and timing instrumentation. Isolated cost samples use warmed caches at 32, 128 and 512 tokens. The target’s verification forward consumes the pending token and the proposals. The cost projection uses the closest measured prefix length. The amortization calculation charges each off-policy deployment the full teacher-pool preparation cost and reports the request count only when measured seconds saved per request are positive.
+
+The exact-sampling implementation follows Leviathan et al. The two distillation conditions follow the manual’s DistillSpec and on-policy distillation readings. The chat formatting and model/KV-cache APIs come from Hugging Face Transformers. The course repository supplies the data manifests, prefix-bank generation routine and position-selection rule. [Course data and generator](https://github.com/AbDu11aHHH/atml-pa4-datasets)

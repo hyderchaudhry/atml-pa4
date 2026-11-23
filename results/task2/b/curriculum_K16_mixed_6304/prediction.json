@@ -1,0 +1,13 @@
+{
+  "comparator": "window_K16_mixed",
+  "development_near": [
+    0.068359375,
+    0.064453125,
+    0.061279296875
+  ],
+  "near_updates": 1500,
+  "rule": "1500 near updates if mean final baseline near-development accuracy <0.8, otherwise 500; then mixed",
+  "prediction": "Near-first supervision improves near recall; far sources remain outside the 126-position path.",
+  "extra_parameters": 0,
+  "extra_state_bytes": 0
+}

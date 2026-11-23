@@ -1,0 +1,330 @@
+{
+  "cells": {
+    "train_K4_near": {
+      "sequences": 64,
+      "queries": 256,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        61,
+        68,
+        63,
+        64
+      ]
+    },
+    "train_K4_far": {
+      "sequences": 64,
+      "queries": 256,
+      "min_distance": 128,
+      "max_distance": 249,
+      "offset_mod_four": [
+        51,
+        77,
+        56,
+        72
+      ]
+    },
+    "train_K4_mixed": {
+      "sequences": 64,
+      "queries": 256,
+      "min_distance": 3,
+      "max_distance": 250,
+      "offset_mod_four": [
+        70,
+        57,
+        60,
+        69
+      ]
+    },
+    "train_K8_near": {
+      "sequences": 64,
+      "queries": 512,
+      "min_distance": 4,
+      "max_distance": 63,
+      "offset_mod_four": [
+        129,
+        122,
+        129,
+        132
+      ]
+    },
+    "train_K8_far": {
+      "sequences": 64,
+      "queries": 512,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        141,
+        109,
+        132,
+        130
+      ]
+    },
+    "train_K8_mixed": {
+      "sequences": 64,
+      "queries": 512,
+      "min_distance": 6,
+      "max_distance": 250,
+      "offset_mod_four": [
+        132,
+        113,
+        122,
+        145
+      ]
+    },
+    "train_K16_near": {
+      "sequences": 64,
+      "queries": 1024,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        225,
+        281,
+        270,
+        248
+      ]
+    },
+    "train_K16_far": {
+      "sequences": 64,
+      "queries": 1024,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        241,
+        245,
+        266,
+        272
+      ]
+    },
+    "train_K16_mixed": {
+      "sequences": 64,
+      "queries": 1024,
+      "min_distance": 4,
+      "max_distance": 249,
+      "offset_mod_four": [
+        258,
+        288,
+        244,
+        234
+      ]
+    },
+    "development_K4_near": {
+      "sequences": 256,
+      "queries": 1024,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        269,
+        261,
+        243,
+        251
+      ]
+    },
+    "development_K4_far": {
+      "sequences": 256,
+      "queries": 1024,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        224,
+        280,
+        280,
+        240
+      ]
+    },
+    "development_K4_mixed": {
+      "sequences": 256,
+      "queries": 1024,
+      "min_distance": 5,
+      "max_distance": 250,
+      "offset_mod_four": [
+        243,
+        256,
+        250,
+        275
+      ]
+    },
+    "development_K8_near": {
+      "sequences": 256,
+      "queries": 2048,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        523,
+        512,
+        495,
+        518
+      ]
+    },
+    "development_K8_far": {
+      "sequences": 256,
+      "queries": 2048,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        494,
+        553,
+        472,
+        529
+      ]
+    },
+    "development_K8_mixed": {
+      "sequences": 256,
+      "queries": 2048,
+      "min_distance": 5,
+      "max_distance": 250,
+      "offset_mod_four": [
+        532,
+        515,
+        498,
+        503
+      ]
+    },
+    "development_K16_near": {
+      "sequences": 256,
+      "queries": 4096,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        1016,
+        1037,
+        982,
+        1061
+      ]
+    },
+    "development_K16_far": {
+      "sequences": 256,
+      "queries": 4096,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        1027,
+        1004,
+        1050,
+        1015
+      ]
+    },
+    "development_K16_mixed": {
+      "sequences": 256,
+      "queries": 4096,
+      "min_distance": 5,
+      "max_distance": 250,
+      "offset_mod_four": [
+        997,
+        1057,
+        1048,
+        994
+      ]
+    },
+    "test_K4_near": {
+      "sequences": 1024,
+      "queries": 4096,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        1000,
+        1010,
+        990,
+        1096
+      ]
+    },
+    "test_K4_far": {
+      "sequences": 1024,
+      "queries": 4096,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        1044,
+        1028,
+        1028,
+        996
+      ]
+    },
+    "test_K4_mixed": {
+      "sequences": 1024,
+      "queries": 4096,
+      "min_distance": 3,
+      "max_distance": 250,
+      "offset_mod_four": [
+        1039,
+        1026,
+        1006,
+        1025
+      ]
+    },
+    "test_K8_near": {
+      "sequences": 1024,
+      "queries": 8192,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        1941,
+        2064,
+        2057,
+        2130
+      ]
+    },
+    "test_K8_far": {
+      "sequences": 1024,
+      "queries": 8192,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        2086,
+        2082,
+        2056,
+        1968
+      ]
+    },
+    "test_K8_mixed": {
+      "sequences": 1024,
+      "queries": 8192,
+      "min_distance": 3,
+      "max_distance": 250,
+      "offset_mod_four": [
+        2059,
+        2083,
+        2032,
+        2018
+      ]
+    },
+    "test_K16_near": {
+      "sequences": 1024,
+      "queries": 16384,
+      "min_distance": 3,
+      "max_distance": 63,
+      "offset_mod_four": [
+        3896,
+        4095,
+        4061,
+        4332
+      ]
+    },
+    "test_K16_far": {
+      "sequences": 1024,
+      "queries": 16384,
+      "min_distance": 128,
+      "max_distance": 250,
+      "offset_mod_four": [
+        4192,
+        4044,
+        4089,
+        4059
+      ]
+    },
+    "test_K16_mixed": {
+      "sequences": 1024,
+      "queries": 16384,
+      "min_distance": 3,
+      "max_distance": 250,
+      "offset_mod_four": [
+        4056,
+        4186,
+        3987,
+        4155
+      ]
+    }
+  },
+  "window_two_layer_reach": 126,
+  "chance_label": 0.015625
+}

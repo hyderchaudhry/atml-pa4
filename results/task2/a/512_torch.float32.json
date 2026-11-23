@@ -1,0 +1,458 @@
+{
+  "length": 512,
+  "dtype": "torch.float32",
+  "shape": [
+    2,
+    4,
+    512,
+    64
+  ],
+  "device": "cuda:0",
+  "reference": {
+    "status": "ok"
+  },
+  "methods": {
+    "dense": {
+      "forward": {
+        "status": "ok",
+        "ms": [
+          0.7837559999757104,
+          0.7928140000217354,
+          0.7587259999581875,
+          0.7669590000318749,
+          0.7922780000058083,
+          0.7933390000403051,
+          0.7615330000021459,
+          0.7580930000017361,
+          0.7632489999878089,
+          0.762769000004937
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 50855936,
+        "peak_reserved": 73400320
+      },
+      "forward_backward": {
+        "status": "ok",
+        "ms": [
+          2.116833000002316,
+          2.158108000003267,
+          2.123647000018991,
+          2.1513019999588323,
+          2.108747999955085,
+          2.108432999989418,
+          2.1095970000146735,
+          2.109354000026542,
+          2.1113409999884425,
+          2.1054380000009587
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 61341696,
+        "peak_reserved": 77594624
+      },
+      "agreement": {
+        "status": "ok",
+        "output": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "dq": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "dk": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "dv": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        }
+      },
+      "edge": {
+        "status": "ok",
+        "extreme_scores": {
+          "output": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          "dq": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          "dk": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          "dv": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        },
+        "future_max_abs": 0.0
+      }
+    },
+    "tiled_128": {
+      "forward": {
+        "status": "ok",
+        "ms": [
+          3.8170089999880474,
+          3.2373480000273958,
+          3.570824000007633,
+          3.4151810000366822,
+          3.516488999991907,
+          3.133359000003111,
+          3.1000179999978172,
+          3.276205000020127,
+          3.409285000032014,
+          3.2356010000285096
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 28872704,
+        "peak_reserved": 56623104
+      },
+      "forward_backward": {
+        "status": "ok",
+        "ms": [
+          7.8821759999527785,
+          11.166292999973848,
+          9.734539000021414,
+          9.90709100000231,
+          10.106208000024708,
+          7.780266999986907,
+          7.794155999988561,
+          8.257267999965734,
+          7.711577999998553,
+          7.912990000022546
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 31739904,
+        "peak_reserved": 58720256
+      },
+      "agreement": {
+        "status": "ok",
+        "output": {
+          "max_abs": 8.940696716308594e-07,
+          "relative_l2": 2.360317523653066e-07
+        },
+        "dq": {
+          "max_abs": 7.892963367339689e-07,
+          "relative_l2": 2.987985396885051e-07
+        },
+        "dk": {
+          "max_abs": 2.1457672119140625e-06,
+          "relative_l2": 5.233835054241354e-07
+        },
+        "dv": {
+          "max_abs": 3.5762786865234375e-06,
+          "relative_l2": 5.181043434276944e-07
+        }
+      },
+      "edge": {
+        "status": "ok",
+        "extreme_scores": {
+          "output": {
+            "max_abs": 2.384185791015625e-07,
+            "relative_l2": 2.8160398457544034e-08
+          },
+          "dq": {
+            "max_abs": 2.86102294921875e-05,
+            "relative_l2": 1.6859173683769768e-06
+          },
+          "dk": {
+            "max_abs": 1.430511474609375e-05,
+            "relative_l2": 1.7650654626777396e-06
+          },
+          "dv": {
+            "max_abs": 1.0013580322265625e-05,
+            "relative_l2": 1.0004957857745467e-06
+          }
+        },
+        "future_max_abs": 0.0
+      }
+    },
+    "tiled_256": {
+      "forward": {
+        "status": "ok",
+        "ms": [
+          1.2226190000319548,
+          1.3763029999722676,
+          1.1918239999886282,
+          1.2360500000454522,
+          1.2460030000056577,
+          1.1871179999616288,
+          1.2181360000340646,
+          1.3097609999590532,
+          1.2297909999574586,
+          1.5880110000239256
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 35446784,
+        "peak_reserved": 54525952
+      },
+      "forward_backward": {
+        "status": "ok",
+        "ms": [
+          3.2064650000052097,
+          3.201024000020425,
+          3.0647250000015447,
+          3.2015909999927317,
+          3.052243000013277,
+          3.094495000027564,
+          3.1503929999985303,
+          3.060880999953497,
+          2.9313069999830077,
+          2.9255169999942154
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 38035456,
+        "peak_reserved": 56623104
+      },
+      "agreement": {
+        "status": "ok",
+        "output": {
+          "max_abs": 1.1920928955078125e-06,
+          "relative_l2": 2.5179207341352594e-07
+        },
+        "dq": {
+          "max_abs": 7.892963367339689e-07,
+          "relative_l2": 2.8145774422227987e-07
+        },
+        "dk": {
+          "max_abs": 1.6689300537109375e-06,
+          "relative_l2": 4.79290292787482e-07
+        },
+        "dv": {
+          "max_abs": 3.0994415283203125e-06,
+          "relative_l2": 4.6572165501856944e-07
+        }
+      },
+      "edge": {
+        "status": "ok",
+        "extreme_scores": {
+          "output": {
+            "max_abs": 2.384185791015625e-07,
+            "relative_l2": 2.8160398457544034e-08
+          },
+          "dq": {
+            "max_abs": 2.86102294921875e-05,
+            "relative_l2": 1.6859173683769768e-06
+          },
+          "dk": {
+            "max_abs": 1.430511474609375e-05,
+            "relative_l2": 1.7650654626777396e-06
+          },
+          "dv": {
+            "max_abs": 1.0013580322265625e-05,
+            "relative_l2": 1.0004957857745467e-06
+          }
+        },
+        "future_max_abs": 0.0
+      }
+    },
+    "FLASH_ATTENTION": {
+      "forward": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "forward_backward": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "agreement": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "edge": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      }
+    },
+    "EFFICIENT_ATTENTION": {
+      "forward": {
+        "status": "ok",
+        "ms": [
+          0.34174199998915356,
+          0.3347640000015417,
+          0.33192199998666183,
+          0.32967500004588146,
+          0.33334199997625547,
+          0.33129799999187526,
+          0.33171299998002723,
+          0.3551900000502428,
+          0.33368200001859805,
+          0.331412999969416
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 26476544,
+        "peak_reserved": 52428800
+      },
+      "forward_backward": {
+        "status": "ok",
+        "ms": [
+          1.3069089999930839,
+          1.2884559999974954,
+          1.302702000032241,
+          1.2935949999928198,
+          1.2875890000145773,
+          1.2897660000135147,
+          1.2931429999980537,
+          1.3067260000525494,
+          1.2886430000094151,
+          1.3429269999960525
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 32800768,
+        "peak_reserved": 58720256
+      },
+      "agreement": {
+        "status": "ok",
+        "output": {
+          "max_abs": 1.3709068298339844e-06,
+          "relative_l2": 2.7366672838979866e-07
+        },
+        "dq": {
+          "max_abs": 8.344650268554688e-07,
+          "relative_l2": 3.6405461401045613e-07
+        },
+        "dk": {
+          "max_abs": 2.384185791015625e-06,
+          "relative_l2": 5.439083565761393e-07
+        },
+        "dv": {
+          "max_abs": 4.291534423828125e-06,
+          "relative_l2": 5.442839778879716e-07
+        }
+      },
+      "edge": {
+        "status": "ok",
+        "extreme_scores": {
+          "output": {
+            "max_abs": 5.125999450683594e-06,
+            "relative_l2": 2.304329456137566e-07
+          },
+          "dq": {
+            "max_abs": 4.100799560546875e-05,
+            "relative_l2": 2.321238298463868e-06
+          },
+          "dk": {
+            "max_abs": 4.315376281738281e-05,
+            "relative_l2": 2.480777311575366e-06
+          },
+          "dv": {
+            "max_abs": 3.361701965332031e-05,
+            "relative_l2": 2.0841514469793765e-06
+          }
+        },
+        "future_max_abs": 0.0
+      }
+    },
+    "CUDNN_ATTENTION": {
+      "forward": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "forward_backward": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "agreement": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      },
+      "edge": {
+        "status": "unsupported_or_failed",
+        "error": "No available kernel. Aborting execution."
+      }
+    },
+    "MATH": {
+      "forward": {
+        "status": "ok",
+        "ms": [
+          0.957335000009607,
+          0.8955060000062076,
+          0.8496190000073511,
+          0.8727929999849948,
+          0.9000600000490522,
+          0.8795109999937267,
+          0.8824120000099356,
+          0.867636999998922,
+          0.8704439999860369,
+          0.9160160000192263
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 46404096,
+        "peak_reserved": 54525952
+      },
+      "forward_backward": {
+        "status": "ok",
+        "ms": [
+          2.023196999971333,
+          2.0147590000192395,
+          2.0196379999788405,
+          2.0175500000050306,
+          2.020334000008006,
+          2.012477000050694,
+          2.0071270000130426,
+          2.0209720000252673,
+          2.003702000024532,
+          2.0062899999970796
+        ],
+        "warmups": 2,
+        "repetitions": 10,
+        "peak_allocated": 63176704,
+        "peak_reserved": 79691776
+      },
+      "agreement": {
+        "status": "ok",
+        "output": {
+          "max_abs": 7.152557373046875e-07,
+          "relative_l2": 1.8881216590216354e-07
+        },
+        "dq": {
+          "max_abs": 1.0728836059570312e-06,
+          "relative_l2": 3.4129473647226405e-07
+        },
+        "dk": {
+          "max_abs": 3.5762786865234375e-06,
+          "relative_l2": 7.198965477073216e-07
+        },
+        "dv": {
+          "max_abs": 9.5367431640625e-07,
+          "relative_l2": 2.3108620439415972e-07
+        }
+      },
+      "edge": {
+        "status": "ok",
+        "extreme_scores": {
+          "output": {
+            "max_abs": 1.71661376953125e-05,
+            "relative_l2": 9.756478220879217e-07
+          },
+          "dq": {
+            "max_abs": 0.000186920166015625,
+            "relative_l2": 6.4624150581948925e-06
+          },
+          "dk": {
+            "max_abs": 8.7738037109375e-05,
+            "relative_l2": 6.365855824697064e-06
+          },
+          "dv": {
+            "max_abs": 1.52587890625e-05,
+            "relative_l2": 9.445276418773574e-07
+          }
+        },
+        "future_max_abs": 0.0
+      }
+    }
+  },
+  "seed": 6304
+}
