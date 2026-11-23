@@ -1,0 +1,20 @@
+{
+  "fp16": "complete",
+  "p1_25": "complete",
+  "p1_50": "complete",
+  "p1_75": "complete",
+  "p2_25": "complete",
+  "p2_50": "complete",
+  "p2_75": "complete",
+  "p3_50": "complete",
+  "p3_75": "complete",
+  "q1_8": "complete",
+  "q1_4": "complete",
+  "q1_3": "complete",
+  "q2_8": "complete",
+  "q2_4": "complete",
+  "q2_3": "complete",
+  "q3_4": "complete",
+  "q3_3": "complete",
+  "wanda_2of4_50": "complete"
+}

@@ -1,0 +1,5490 @@
+{
+  "0.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.088221845042426e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.951138412754517e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.088221845042426e-05,
+        "rescale_relative_l2": 2.167955841514413e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.719226126326248e-05,
+        "rescale_relative_l2": 2.1755280954494083e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "0.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4637945898575708e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.9574226573458873e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4637945898575708e-05,
+        "rescale_relative_l2": 5.643458393933543e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.090136669925414e-05,
+        "rescale_relative_l2": 5.646349450216803e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "0.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 2.4191658667405136e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.4191658667405136e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.628403990456718e-06,
+        "rescale_relative_l2": 1.210348159474961e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 2.253949423902668e-05,
+        "rescale_relative_l2": 1.2631954859898542e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "0.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.890919495257549e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.811253529624082e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.890919495257549e-05,
+        "rescale_relative_l2": 2.416930726667488e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.999127799645066e-05,
+        "rescale_relative_l2": 2.434788655136799e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "0.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2414421689754818e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.2622284884855617e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2414421689754818e-05,
+        "rescale_relative_l2": 5.951359298705938e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.0217873649671674e-05,
+        "rescale_relative_l2": 5.951029606876546e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "0.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.055133831570856e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.982729635434225e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.055133831570856e-05,
+        "rescale_relative_l2": 1.5234004990816175e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.100960596697405e-05,
+        "rescale_relative_l2": 1.523059864894094e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "0.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4367880541831255e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.051065868930891e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4367880541831255e-05,
+        "rescale_relative_l2": 1.7222049564225017e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.5643879275303334e-05,
+        "rescale_relative_l2": 1.7239744920516387e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "1.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.6117495761136524e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.579979602363892e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.6117495761136524e-05,
+        "rescale_relative_l2": 2.0828738911404798e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.653401629184373e-05,
+        "rescale_relative_l2": 2.0900276354041125e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "1.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 4.1311359382234514e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.1311359382234514e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.7543322580168024e-05,
+        "rescale_relative_l2": 5.566125196310168e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00025412908871658146,
+        "rescale_relative_l2": 5.55268854895985e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "1.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3965980542707257e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.574317502672784e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3965980542707257e-05,
+        "rescale_relative_l2": 1.969823841818652e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.816078555653803e-05,
+        "rescale_relative_l2": 1.9625228731001698e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "1.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2561763469420839e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.4424778782995418e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2561763469420839e-05,
+        "rescale_relative_l2": 1.8808491120125836e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.8442430852446705e-05,
+        "rescale_relative_l2": 1.8754413133592607e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "1.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.0985945613792865e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.163748821563786e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.0985945613792865e-06,
+        "rescale_relative_l2": 5.360785166885762e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.266450196155347e-05,
+        "rescale_relative_l2": 5.364103117244667e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "1.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.121217767125927e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.8461055990192108e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.121217767125927e-05,
+        "rescale_relative_l2": 1.2084761635833274e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.259785418980755e-05,
+        "rescale_relative_l2": 1.2064215582086035e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "1.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.0235663467028644e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.832725633401424e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.0235663467028644e-05,
+        "rescale_relative_l2": 5.020770004193764e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.129427518113516e-05,
+        "rescale_relative_l2": 4.959369448442885e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "2.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.069376543862745e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.2713491236791015e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.069376543862745e-05,
+        "rescale_relative_l2": 2.784292121305043e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.157971099833958e-05,
+        "rescale_relative_l2": 2.7817796421913954e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "2.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 4.147028812440112e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.147028812440112e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.935864853905514e-05,
+        "rescale_relative_l2": 5.810711058984452e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00021498218120541424,
+        "rescale_relative_l2": 5.826017286381102e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "2.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.8994611309608445e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.2808575522503816e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.8994611309608445e-05,
+        "rescale_relative_l2": 2.1173609354718792e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.039103365968913e-05,
+        "rescale_relative_l2": 2.1169826425193605e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "2.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5432937289006077e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.9562152374419384e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5432937289006077e-05,
+        "rescale_relative_l2": 2.0182982041205833e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.256885535549372e-05,
+        "rescale_relative_l2": 2.0312857884619007e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "2.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.867908162646927e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.723728008888429e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.867908162646927e-06,
+        "rescale_relative_l2": 5.442429369395541e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.202341369818896e-05,
+        "rescale_relative_l2": 5.442590236270917e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "2.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4610289983684197e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.275692117516883e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4610289983684197e-05,
+        "rescale_relative_l2": 1.2696000339929014e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.496159090194851e-05,
+        "rescale_relative_l2": 1.2669323723457637e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "2.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8764125090674497e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 9.209088602801785e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8764125090674497e-05,
+        "rescale_relative_l2": 6.119242357272014e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.046896644169465e-05,
+        "rescale_relative_l2": 6.115272981332964e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "3.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.945171763713006e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.228913192288019e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.945171763713006e-05,
+        "rescale_relative_l2": 2.7365541654944536e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.4249288950813934e-05,
+        "rescale_relative_l2": 2.7426517590356525e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "3.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.9580423617735505e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.087809065822512e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.9580423617735505e-05,
+        "rescale_relative_l2": 6.089996986702317e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.744862861931324e-05,
+        "rescale_relative_l2": 6.088462214393076e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "3.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.493268609920051e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.2019417883711867e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.493268609920051e-05,
+        "rescale_relative_l2": 1.9999578171336907e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.621105421800166e-05,
+        "rescale_relative_l2": 2.0006915235626366e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "3.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3196134204918053e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.715851431072224e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3196134204918053e-05,
+        "rescale_relative_l2": 1.9434516218552744e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.935653098276816e-05,
+        "rescale_relative_l2": 1.937557243536503e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "3.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.827116299566114e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.915384008403635e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.827116299566114e-06,
+        "rescale_relative_l2": 5.45143450381147e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.649689799407497e-05,
+        "rescale_relative_l2": 5.454671168081404e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "3.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8358379495330155e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.753516234108247e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8358379495330155e-05,
+        "rescale_relative_l2": 1.3000034471133404e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.916905163554475e-05,
+        "rescale_relative_l2": 1.2995268150461925e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "3.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.266731800977141e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 9.145982767222449e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.266731800977141e-05,
+        "rescale_relative_l2": 2.0322212890278024e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.139061588328332e-05,
+        "rescale_relative_l2": 2.0358103824946738e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "4.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.236239717807621e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.3974774851230904e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.236239717807621e-05,
+        "rescale_relative_l2": 2.7982324013464677e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.5039832659531385e-05,
+        "rescale_relative_l2": 2.80234388583267e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "4.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.686347554321401e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.8199177652131766e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.686347554321401e-05,
+        "rescale_relative_l2": 6.558126415256993e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.047392551205121e-05,
+        "rescale_relative_l2": 6.558663017131039e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "4.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.8279240975971334e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.6194924430456012e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.8279240975971334e-05,
+        "rescale_relative_l2": 2.127623019987368e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.945624045329168e-05,
+        "rescale_relative_l2": 2.130486365103934e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "4.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.7461190509493463e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.1877047402085736e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.7461190509493463e-05,
+        "rescale_relative_l2": 2.155450999907771e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.099837966961786e-05,
+        "rescale_relative_l2": 2.1484011369921063e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "4.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 6.915860012668418e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.915860012668418e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 6.967596618778771e-06,
+        "rescale_relative_l2": 5.890386205464893e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.945187538396567e-05,
+        "rescale_relative_l2": 5.889208409826097e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "4.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.9116090445313603e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.9894842706853524e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.9116090445313603e-05,
+        "rescale_relative_l2": 1.3626352313167445e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.6732460759812966e-05,
+        "rescale_relative_l2": 1.3597805548215547e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "4.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.368034595041536e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.872835365356877e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.368034595041536e-05,
+        "rescale_relative_l2": 2.0714882964512071e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.955942495143972e-05,
+        "rescale_relative_l2": 2.0720142401842168e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "5.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.481046926230192e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.24724782735575e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.481046926230192e-05,
+        "rescale_relative_l2": 2.813253274780436e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.630290151108056e-05,
+        "rescale_relative_l2": 2.831080507803563e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "5.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.637436748249456e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.637436748249456e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.894919063895941e-05,
+        "rescale_relative_l2": 6.079130230318697e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.643740486353636e-05,
+        "rescale_relative_l2": 6.067277240617841e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "5.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.7508320524939336e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.4935310648288578e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.7508320524939336e-05,
+        "rescale_relative_l2": 2.0664023736571835e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.772892811568454e-05,
+        "rescale_relative_l2": 2.0634006148156914e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "5.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.9900004190276377e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.592316195659805e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.9900004190276377e-05,
+        "rescale_relative_l2": 2.1702841479509516e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.494456804124638e-05,
+        "rescale_relative_l2": 2.1740473243880842e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "5.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.9356317504134495e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.705541298084427e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.9356317504134495e-06,
+        "rescale_relative_l2": 5.582534754466906e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.6884419387206435e-05,
+        "rescale_relative_l2": 5.587160671893798e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "5.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.936048258561641e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.937127909623086e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.936048258561641e-05,
+        "rescale_relative_l2": 1.3089346850847505e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.4362219341564924e-05,
+        "rescale_relative_l2": 1.3052012093339727e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "5.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.30232287524268e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 7.53076164983213e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.30232287524268e-05,
+        "rescale_relative_l2": 6.173951305754599e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.6073175073834136e-05,
+        "rescale_relative_l2": 6.18371529981232e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "6.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.156609818688594e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.7017027352703735e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.156609818688594e-05,
+        "rescale_relative_l2": 2.7374494493415114e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.965350960148498e-05,
+        "rescale_relative_l2": 2.745967151440709e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "6.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.403444497962482e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.403444497962482e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.4490309190005064e-05,
+        "rescale_relative_l2": 6.443361826313776e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.135466951993294e-05,
+        "rescale_relative_l2": 6.448998988162202e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "6.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5567560694762506e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.264753493363969e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5567560694762506e-05,
+        "rescale_relative_l2": 2.0291432178964897e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.133954204618931e-05,
+        "rescale_relative_l2": 2.029223082899989e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "6.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.9232551494496875e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.4234432203229517e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.9232551494496875e-05,
+        "rescale_relative_l2": 2.184192453569267e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.92982173152268e-05,
+        "rescale_relative_l2": 2.1806592087614263e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "6.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 1.2377625353110489e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.2377625353110489e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2907181371701881e-05,
+        "rescale_relative_l2": 5.87742533753044e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.946587432641536e-05,
+        "rescale_relative_l2": 5.881367428628437e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "6.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.950127782241907e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 8.058096136664972e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.950127782241907e-05,
+        "rescale_relative_l2": 1.3423509415133594e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.891843804623932e-05,
+        "rescale_relative_l2": 1.3418267030829156e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "6.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.487532012513839e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.89114536321722e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.487532012513839e-05,
+        "rescale_relative_l2": 6.237276579668105e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.905925743514672e-05,
+        "rescale_relative_l2": 6.235045475477818e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "7.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.588085382943973e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.9918981201481074e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.588085382943973e-05,
+        "rescale_relative_l2": 2.7569748795031046e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.36355034657754e-05,
+        "rescale_relative_l2": 2.762486133178754e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "7.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.4699183743214235e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.474233380984515e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.4699183743214235e-05,
+        "rescale_relative_l2": 6.353936328196141e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.15888789575547e-05,
+        "rescale_relative_l2": 6.369694460772735e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "7.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.482684092479758e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.6134182917303406e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.482684092479758e-05,
+        "rescale_relative_l2": 1.9881700552559778e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.548607052536681e-05,
+        "rescale_relative_l2": 1.9905918691165425e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "7.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2516736205725465e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.846274062700104e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2516736205725465e-05,
+        "rescale_relative_l2": 1.9443547216724255e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.209877756191418e-05,
+        "rescale_relative_l2": 1.9374182613773883e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "7.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4221346646081656e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.4680369531561155e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4221346646081656e-05,
+        "rescale_relative_l2": 5.827061499985575e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.868441465077922e-05,
+        "rescale_relative_l2": 5.824969093737309e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "7.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4629940526210703e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.832821989315562e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4629940526210703e-05,
+        "rescale_relative_l2": 1.2740228783059138e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.569839777308516e-05,
+        "rescale_relative_l2": 1.2748031963383255e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "7.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.500738239381462e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.773938417201862e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.500738239381462e-05,
+        "rescale_relative_l2": 2.0796818489543512e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.966965934727341e-05,
+        "rescale_relative_l2": 2.076632483749563e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "8.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.830073546851054e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.4820448238169774e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.830073546851054e-05,
+        "rescale_relative_l2": 2.9246538701954705e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.269128738902509e-05,
+        "rescale_relative_l2": 2.9206427143435576e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "8.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.228937566746026e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.228937566746026e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.426511830184609e-05,
+        "rescale_relative_l2": 6.316060421340808e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.465939855435863e-05,
+        "rescale_relative_l2": 6.313092058007896e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "8.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.1444468075060286e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.2253545214189216e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.1444468075060286e-05,
+        "rescale_relative_l2": 2.192748667084743e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.272185757756233e-05,
+        "rescale_relative_l2": 2.1925745841144817e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "8.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5536719729425386e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.03188210434746e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5536719729425386e-05,
+        "rescale_relative_l2": 2.034955173257913e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.515616405522451e-05,
+        "rescale_relative_l2": 2.0343968287761527e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "8.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 1.3113380191498436e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.3113380191498436e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3185287571104709e-05,
+        "rescale_relative_l2": 5.831831799696374e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.841933696297929e-05,
+        "rescale_relative_l2": 5.827107543154852e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "8.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.3556893211207353e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.351521394914016e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.3556893211207353e-05,
+        "rescale_relative_l2": 1.238767879385705e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.073241143487394e-05,
+        "rescale_relative_l2": 1.2333904919614724e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "8.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.434539758018218e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.840437395614572e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.434539758018218e-05,
+        "rescale_relative_l2": 6.219981969479704e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.69967199023813e-05,
+        "rescale_relative_l2": 6.220072350515693e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "9.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.943828778574243e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.361003448138945e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.943828778574243e-05,
+        "rescale_relative_l2": 3.137383544071781e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.006007167045027e-05,
+        "rescale_relative_l2": 3.1344524131782237e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "9.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.322077463963069e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.322077463963069e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.4137479815399274e-05,
+        "rescale_relative_l2": 6.303121722339711e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.0571176214143634e-05,
+        "rescale_relative_l2": 6.308949878075509e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "9.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.0071271137567237e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.562100391718559e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.0071271137567237e-05,
+        "rescale_relative_l2": 2.1684613216166326e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.145773659227416e-05,
+        "rescale_relative_l2": 2.1681947259821754e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "9.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3919707271270454e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.1248750272206962e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3919707271270454e-05,
+        "rescale_relative_l2": 1.9657615268897644e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.641474490403198e-05,
+        "rescale_relative_l2": 1.963309159691562e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "9.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4552169886883348e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.4781167010369245e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4552169886883348e-05,
+        "rescale_relative_l2": 5.90469710459729e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.929931674269028e-05,
+        "rescale_relative_l2": 5.905913553760911e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "9.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.08541259780759e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.740295116789639e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.08541259780759e-05,
+        "rescale_relative_l2": 1.2756972012084589e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.323891698732041e-05,
+        "rescale_relative_l2": 1.2718220432361704e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "9.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.336455483804457e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.5483047870220616e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.336455483804457e-05,
+        "rescale_relative_l2": 6.181012395245489e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.5345637772697955e-05,
+        "rescale_relative_l2": 6.188279257912654e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "10.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.1720966439461336e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.681838592863642e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.1720966439461336e-05,
+        "rescale_relative_l2": 3.3155711776089447e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.342782868770882e-05,
+        "rescale_relative_l2": 3.3216275596714695e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "10.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.396734609850682e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.396734609850682e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.568183819879778e-05,
+        "rescale_relative_l2": 6.283296443143627e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.623751010512933e-05,
+        "rescale_relative_l2": 6.29015573849756e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "10.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.066684464807622e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.9259173970785923e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.066684464807622e-05,
+        "rescale_relative_l2": 2.182709977205377e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.58611606922932e-05,
+        "rescale_relative_l2": 2.1858008381059335e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "10.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4190693946147803e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.6910409613046795e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4190693946147803e-05,
+        "rescale_relative_l2": 1.9531961470420356e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.980116475257091e-05,
+        "rescale_relative_l2": 1.9542623874713172e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "10.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3649465472553857e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.4005866432853509e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3649465472553857e-05,
+        "rescale_relative_l2": 5.835356091665744e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.046329169999808e-05,
+        "rescale_relative_l2": 5.840489620823064e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "10.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.6140760382986628e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.8303318180842325e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.6140760382986628e-05,
+        "rescale_relative_l2": 1.2589406139795756e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.583509533200413e-05,
+        "rescale_relative_l2": 1.2583242892105773e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "10.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.250852023484185e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.539753354038112e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.250852023484185e-05,
+        "rescale_relative_l2": 6.157761163194664e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.89329504489433e-05,
+        "rescale_relative_l2": 6.163679131532263e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "11.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.1454597521806136e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.674529918702319e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.1454597521806136e-05,
+        "rescale_relative_l2": 2.9788702704536263e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.557338878745213e-05,
+        "rescale_relative_l2": 2.9817906010976003e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "11.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.364334042998962e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.364334042998962e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.4202326787635684e-05,
+        "rescale_relative_l2": 6.2786273247184e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.5577005948871374e-05,
+        "rescale_relative_l2": 6.269260666158516e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "11.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.8739823644864373e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.2957930670818314e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.8739823644864373e-05,
+        "rescale_relative_l2": 2.0978455950171337e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.9753703681053594e-05,
+        "rescale_relative_l2": 2.093328816954454e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "11.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.1887406799360178e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.8264176105731167e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.1887406799360178e-05,
+        "rescale_relative_l2": 1.8592309913856297e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.128503835294396e-05,
+        "rescale_relative_l2": 1.8715859084750264e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "11.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.0863029274332803e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.1259937309660017e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.0863029274332803e-05,
+        "rescale_relative_l2": 5.644087650580332e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.726823317469098e-05,
+        "rescale_relative_l2": 5.650518346556055e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "11.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.3524038624600507e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.095656160847284e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.3524038624600507e-05,
+        "rescale_relative_l2": 1.2763574375185271e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.178750507184304e-05,
+        "rescale_relative_l2": 1.2793441328540212e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "11.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.065796772716567e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.602386979968287e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.065796772716567e-05,
+        "rescale_relative_l2": 6.104937142481504e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.0197755626868457e-05,
+        "rescale_relative_l2": 6.106981800257927e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "12.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.447661558515392e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.345258614397608e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.447661558515392e-05,
+        "rescale_relative_l2": 3.2479343303748465e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011638532305369154,
+        "rescale_relative_l2": 3.252386306940025e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "12.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.6730503779836e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.6730503779836e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.7367030017776415e-05,
+        "rescale_relative_l2": 6.360722295539745e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.408469926100224e-05,
+        "rescale_relative_l2": 6.35212757060799e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "12.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.249283716082573e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.4370834328001365e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.249283716082573e-05,
+        "rescale_relative_l2": 2.2166859992012178e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.925430014031008e-05,
+        "rescale_relative_l2": 2.2222123163828655e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "12.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.7670656234258786e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.4611726985312998e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.7670656234258786e-05,
+        "rescale_relative_l2": 2.0487763663368241e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.765486275777221e-05,
+        "rescale_relative_l2": 2.0359959762572544e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "12.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2913276805193163e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.3927980944572482e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2913276805193163e-05,
+        "rescale_relative_l2": 5.699812390957959e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.814831117982976e-05,
+        "rescale_relative_l2": 5.706006618311221e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "12.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.052712625300046e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.786871820921078e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.052712625300046e-05,
+        "rescale_relative_l2": 1.2045323671827646e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.095742042409256e-05,
+        "rescale_relative_l2": 1.2048387532104243e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "12.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.1497653253609315e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.5858043449698016e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.1497653253609315e-05,
+        "rescale_relative_l2": 6.108414822847408e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.769291263073683e-05,
+        "rescale_relative_l2": 6.108689944994694e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "13.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.188280970789492e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.7443260225700215e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.188280970789492e-05,
+        "rescale_relative_l2": 2.6958034027302347e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.949864134890959e-05,
+        "rescale_relative_l2": 2.7121490120407543e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "13.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.53831346728839e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.53831346728839e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.674708932521753e-05,
+        "rescale_relative_l2": 6.364965088323515e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.969099973095581e-05,
+        "rescale_relative_l2": 6.374572762979369e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "13.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.922876253956929e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.101905167568475e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.922876253956929e-05,
+        "rescale_relative_l2": 2.1122569648923673e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.226449138717726e-05,
+        "rescale_relative_l2": 2.1121326199136092e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "13.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2097424587409478e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.705966678855475e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2097424587409478e-05,
+        "rescale_relative_l2": 1.890449965458174e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.788600926985964e-05,
+        "rescale_relative_l2": 1.8943869406484737e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "13.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.388866894558305e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.5070385416038334e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.388866894558305e-05,
+        "rescale_relative_l2": 5.690486659659655e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.539610381470993e-05,
+        "rescale_relative_l2": 5.687350608241104e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "13.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.0838975615333766e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.918306538253091e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.0838975615333766e-05,
+        "rescale_relative_l2": 1.190663994066199e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.975151412305422e-05,
+        "rescale_relative_l2": 1.1910992725461256e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "13.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.1433806725544855e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.360773164080456e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.1433806725544855e-05,
+        "rescale_relative_l2": 6.095339131206856e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.52856911579147e-05,
+        "rescale_relative_l2": 6.094497280173528e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "14.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.226717621553689e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.947711906628683e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.226717621553689e-05,
+        "rescale_relative_l2": 3.053117723084142e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00014739592734258622,
+        "rescale_relative_l2": 3.0361073299900454e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "14.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.414256570977159e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.414256570977159e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.104218169231899e-05,
+        "rescale_relative_l2": 6.265592560339428e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.936212594155222e-05,
+        "rescale_relative_l2": 6.259842280087469e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "14.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.536694228183478e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.0652619645697996e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.536694228183478e-05,
+        "rescale_relative_l2": 2.3233940282807453e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.158185664797202e-05,
+        "rescale_relative_l2": 2.332886737121953e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "14.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3382964425545651e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.2803331376053393e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3382964425545651e-05,
+        "rescale_relative_l2": 1.9129960548980307e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.726752013084479e-05,
+        "rescale_relative_l2": 1.9126311201489443e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "14.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4533720786857884e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.5230200915539172e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4533720786857884e-05,
+        "rescale_relative_l2": 5.759643499914091e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.8736579628894106e-05,
+        "rescale_relative_l2": 5.760520593867113e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "14.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4684615709702484e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.369824793888256e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4684615709702484e-05,
+        "rescale_relative_l2": 1.2863780796124047e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.8321457143174484e-05,
+        "rescale_relative_l2": 1.2795874226867454e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "14.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.3683438232401386e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.684206942329183e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.3683438232401386e-05,
+        "rescale_relative_l2": 6.147194540062628e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.551190431811847e-05,
+        "rescale_relative_l2": 6.153441631795431e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "15.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.7824199757305905e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.383386062225327e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.7824199757305905e-05,
+        "rescale_relative_l2": 3.4837782436625275e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.795067308004946e-05,
+        "rescale_relative_l2": 3.495151474908198e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "15.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.575897790142335e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.575897790142335e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.6054847441846505e-05,
+        "rescale_relative_l2": 6.254285835893825e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.8670408179750666e-05,
+        "rescale_relative_l2": 6.258988491936179e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "15.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 7.085268407536205e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 7.085268407536205e-06,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 9.325527571490966e-06,
+        "rescale_relative_l2": 1.8178246818933985e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.209876250475645e-05,
+        "rescale_relative_l2": 1.8343405372434063e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "15.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2734075426124036e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.879909359558951e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2734075426124036e-05,
+        "rescale_relative_l2": 1.944658123420595e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.342188862618059e-05,
+        "rescale_relative_l2": 1.9506275350522628e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "15.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3352802852750756e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.5145511497394182e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3352802852750756e-05,
+        "rescale_relative_l2": 5.667964160238625e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.078951653558761e-05,
+        "rescale_relative_l2": 5.665631306328578e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "15.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.718152063607704e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.7117966207442805e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.718152063607704e-05,
+        "rescale_relative_l2": 1.2866567544733698e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.189622268313542e-05,
+        "rescale_relative_l2": 1.2875321431238262e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "15.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.064722113776952e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.693877781392075e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.064722113776952e-05,
+        "rescale_relative_l2": 6.098239850871323e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.049960236647166e-05,
+        "rescale_relative_l2": 6.093417823649361e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "16.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.3221097914502025e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.747125735273585e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.3221097914502025e-05,
+        "rescale_relative_l2": 3.203932976703072e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011135524255223572,
+        "rescale_relative_l2": 3.214228456727142e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "16.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.786195884458721e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.786195884458721e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.888982246280648e-05,
+        "rescale_relative_l2": 6.466872832788795e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.047518763807602e-05,
+        "rescale_relative_l2": 6.478213094851526e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "16.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.3379634512821212e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.9089045458240435e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.3379634512821212e-05,
+        "rescale_relative_l2": 2.2643808961220202e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.8962468756362796e-05,
+        "rescale_relative_l2": 2.2637289021076867e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "16.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.6099987988127396e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.0053110347362235e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.6099987988127396e-05,
+        "rescale_relative_l2": 2.0507043529960356e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.388314068317413e-05,
+        "rescale_relative_l2": 2.0527301103356876e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "16.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4313175597635563e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.6913641957216896e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4313175597635563e-05,
+        "rescale_relative_l2": 5.697066285392793e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.580746437772177e-05,
+        "rescale_relative_l2": 5.697834239981603e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "16.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.7403648346080445e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.022724872105755e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.7403648346080445e-05,
+        "rescale_relative_l2": 1.3252345354430872e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.995322524337098e-05,
+        "rescale_relative_l2": 1.331990233666147e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "16.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.211386137991212e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.159241482033394e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.211386137991212e-05,
+        "rescale_relative_l2": 6.131151053523354e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.3970325097907335e-05,
+        "rescale_relative_l2": 6.137196351119201e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "17.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.804789230343886e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.4286811316851526e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.804789230343886e-05,
+        "rescale_relative_l2": 2.957198717012943e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.808392208768055e-05,
+        "rescale_relative_l2": 2.951127839878609e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "17.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.671152808237821e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.851503788609989e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.671152808237821e-05,
+        "rescale_relative_l2": 6.459092105615127e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.794447108404711e-05,
+        "rescale_relative_l2": 6.448503313549736e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "17.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.4355675122933462e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.360419214004651e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.4355675122933462e-05,
+        "rescale_relative_l2": 2.2996101733951946e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.984151696087793e-05,
+        "rescale_relative_l2": 2.3014892747141857e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "17.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.7310881958110258e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.9404515114729293e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.7310881958110258e-05,
+        "rescale_relative_l2": 2.088519437393188e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.6851127485279e-05,
+        "rescale_relative_l2": 2.0879214446267724e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "17.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3810225937049836e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.6502199287060648e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3810225937049836e-05,
+        "rescale_relative_l2": 5.628212988995074e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.011595905874856e-05,
+        "rescale_relative_l2": 5.623774654850422e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "17.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.6982035706168972e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.277150557958521e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.6982035706168972e-05,
+        "rescale_relative_l2": 1.3059715797680838e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.821470818365924e-05,
+        "rescale_relative_l2": 1.3022707889831509e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "17.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.0447674362221733e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.107657125336118e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.0447674362221733e-05,
+        "rescale_relative_l2": 1.941087077739212e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.794205208076164e-05,
+        "rescale_relative_l2": 1.9404862428018532e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "18.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.562445974443108e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.315536691341549e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.562445974443108e-05,
+        "rescale_relative_l2": 3.2735178479015303e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.086993718985468e-05,
+        "rescale_relative_l2": 3.2756463497207733e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "18.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.7049387174192816e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.050030474900268e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.7049387174192816e-05,
+        "rescale_relative_l2": 6.496699711533438e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.560762267326936e-05,
+        "rescale_relative_l2": 6.523483762066462e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "18.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.195108390878886e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.819826088147238e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.195108390878886e-05,
+        "rescale_relative_l2": 2.2334880611651897e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.788641621824354e-05,
+        "rescale_relative_l2": 2.2303066771200974e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "18.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5616753444192e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.2594244001084007e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5616753444192e-05,
+        "rescale_relative_l2": 2.054912187077207e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.712502363370731e-05,
+        "rescale_relative_l2": 2.061847510503867e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "18.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4629790712206159e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.7874086552183144e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4629790712206159e-05,
+        "rescale_relative_l2": 5.590858904724882e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.808242713101208e-05,
+        "rescale_relative_l2": 5.578006039286265e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "18.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.2827063730801456e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.610182440956123e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.2827063730801456e-05,
+        "rescale_relative_l2": 1.276162890917476e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.0889557314803824e-05,
+        "rescale_relative_l2": 1.2877099209163134e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "18.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.9228154744487256e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.7928198910085484e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.9228154744487256e-05,
+        "rescale_relative_l2": 1.864392231709644e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.8287983847549185e-05,
+        "rescale_relative_l2": 1.8629560827321257e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "19.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.991439345758408e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.5814303777879104e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.991439345758408e-05,
+        "rescale_relative_l2": 2.8870979917883233e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.967421697685495e-05,
+        "rescale_relative_l2": 2.8914590188833245e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "19.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.866769475280307e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.97048206650652e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.866769475280307e-05,
+        "rescale_relative_l2": 6.281655373641115e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.50938052078709e-05,
+        "rescale_relative_l2": 6.279400395214907e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "19.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.3782255084370263e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.171993350610137e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.3782255084370263e-05,
+        "rescale_relative_l2": 2.2836250934687996e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.738003139616922e-05,
+        "rescale_relative_l2": 2.284689202269874e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "19.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.580549360369332e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.1330895833671093e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.580549360369332e-05,
+        "rescale_relative_l2": 2.02347777644718e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.348462193273008e-05,
+        "rescale_relative_l2": 2.0149680324266228e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "19.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3520332686312031e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.6028527170419693e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3520332686312031e-05,
+        "rescale_relative_l2": 5.517136969501735e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.707274249289185e-05,
+        "rescale_relative_l2": 5.521775392480777e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "19.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.6918871046509594e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 7.804809138178825e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.6918871046509594e-05,
+        "rescale_relative_l2": 1.2785805836301734e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.167862011352554e-05,
+        "rescale_relative_l2": 1.279567385381597e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "19.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.9276252462295815e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.8156012780964375e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.9276252462295815e-05,
+        "rescale_relative_l2": 1.9294569142402906e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.087604197091423e-05,
+        "rescale_relative_l2": 1.9286555641429004e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "20.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.4555330532602966e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.769980660057627e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.4555330532602966e-05,
+        "rescale_relative_l2": 3.0629269076598575e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.400508234743029e-05,
+        "rescale_relative_l2": 3.0935461836634204e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "20.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.6059911508345976e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.862340236082673e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.6059911508345976e-05,
+        "rescale_relative_l2": 6.542474011439481e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.142885831650347e-05,
+        "rescale_relative_l2": 6.529760412377072e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "20.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.818660686898511e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.146902913111262e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.818660686898511e-05,
+        "rescale_relative_l2": 2.339555464914156e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.719391967635602e-05,
+        "rescale_relative_l2": 2.3399402948598436e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "20.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 2.0109195247641765e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.0109195247641765e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.117151780112181e-05,
+        "rescale_relative_l2": 2.2510421615606901e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.856647036736831e-05,
+        "rescale_relative_l2": 2.2698158375078492e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "20.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4884436495776754e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.6820302334963344e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4884436495776754e-05,
+        "rescale_relative_l2": 5.48615105344652e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.493764911079779e-05,
+        "rescale_relative_l2": 5.484895950758073e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "20.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.7575420467182994e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 7.636978989467025e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.7575420467182994e-05,
+        "rescale_relative_l2": 1.4202609577296244e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.273894152604043e-05,
+        "rescale_relative_l2": 1.4261961212014285e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "20.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.93312368739862e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.44652141595725e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.93312368739862e-05,
+        "rescale_relative_l2": 1.9161161901593005e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.888075611437671e-05,
+        "rescale_relative_l2": 1.9168871290276002e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "21.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.9044377040700056e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.8653887056862004e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.9044377040700056e-05,
+        "rescale_relative_l2": 2.3137414473239915e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.210438080714084e-05,
+        "rescale_relative_l2": 2.3060516696205013e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "21.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.3879630791489035e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.864201789838262e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.3879630791489035e-05,
+        "rescale_relative_l2": 6.249483135434275e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.925374327693135e-05,
+        "rescale_relative_l2": 6.253500828279357e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "21.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8171260055387393e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.833758794120513e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8171260055387393e-05,
+        "rescale_relative_l2": 2.400413734449103e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 7.70957994973287e-05,
+        "rescale_relative_l2": 2.4062961756499135e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "21.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.1779973394586705e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.2993235688772984e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.1779973394586705e-05,
+        "rescale_relative_l2": 2.2813397038135008e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.767262625042349e-05,
+        "rescale_relative_l2": 2.2836418622773635e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "21.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2887730918009765e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.5140522009460256e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2887730918009765e-05,
+        "rescale_relative_l2": 5.905291118324385e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.563065158436075e-05,
+        "rescale_relative_l2": 5.907766080781585e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "21.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 4.7868616093182936e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 8.078965765889734e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.7868616093182936e-05,
+        "rescale_relative_l2": 1.506097930814576e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.890825847629458e-05,
+        "rescale_relative_l2": 1.5031496047868131e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "21.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.7680089260684326e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.247919423505664e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.7680089260684326e-05,
+        "rescale_relative_l2": 1.880535336340472e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.8612742577679455e-05,
+        "rescale_relative_l2": 1.8805282309131144e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "22.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.593300061766058e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.9404447306878865e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.593300061766058e-05,
+        "rescale_relative_l2": 3.0628089575657214e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.715066097560339e-05,
+        "rescale_relative_l2": 3.069304455038946e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "22.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.0829232855467126e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.500339516904205e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.0829232855467126e-05,
+        "rescale_relative_l2": 6.097063192100904e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.064073750167154e-05,
+        "rescale_relative_l2": 6.093311526456091e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "22.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.89341314783087e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.188782961340621e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.89341314783087e-05,
+        "rescale_relative_l2": 2.4368119966311497e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 8.46707698656246e-05,
+        "rescale_relative_l2": 2.4320030433955253e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "22.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.2892843844601884e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.553079502831679e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.2892843844601884e-05,
+        "rescale_relative_l2": 2.3028941598113306e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.557707380736247e-05,
+        "rescale_relative_l2": 2.2969918234139186e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "22.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.2181219062767923e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.4948192983865738e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.2181219062767923e-05,
+        "rescale_relative_l2": 5.924885613239894e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 4.7336710849776864e-05,
+        "rescale_relative_l2": 5.919052341596398e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "22.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.375563705456443e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 8.12722064438276e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.375563705456443e-05,
+        "rescale_relative_l2": 1.2826387774111936e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.150886035058647e-05,
+        "rescale_relative_l2": 1.2942365401613642e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "22.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.735827183641959e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.364522828836925e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.735827183641959e-05,
+        "rescale_relative_l2": 1.9269712936420547e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.0612932429648936e-05,
+        "rescale_relative_l2": 1.927489421404971e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "23.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5035169781185687e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.592662687879056e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5035169781185687e-05,
+        "rescale_relative_l2": 2.0366483965972293e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.0830250984290615e-05,
+        "rescale_relative_l2": 2.0623404850539373e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "23.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.9329028620850295e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.286386709078215e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.9329028620850295e-05,
+        "rescale_relative_l2": 6.159555141493911e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.992556543787941e-05,
+        "rescale_relative_l2": 6.16787815488351e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "23.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.817507993313484e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.53537135804072e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.817507993313484e-05,
+        "rescale_relative_l2": 2.422678164748504e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.143044735537842e-05,
+        "rescale_relative_l2": 2.4264943476737244e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "23.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.3114880605135113e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.899299761338625e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.3114880605135113e-05,
+        "rescale_relative_l2": 2.3575591967528453e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00010804537305375561,
+        "rescale_relative_l2": 2.3528450299181713e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "23.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.209541460411856e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.3884620784665458e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.209541460411856e-05,
+        "rescale_relative_l2": 6.005396357977588e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.335676178219728e-05,
+        "rescale_relative_l2": 6.005157615618373e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "23.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.7549714256310835e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 9.3531642050948e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.7549714256310835e-05,
+        "rescale_relative_l2": 1.3084824956877128e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00010668912000255659,
+        "rescale_relative_l2": 1.3063370829513588e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "23.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8698215828626417e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.486531179281883e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8698215828626417e-05,
+        "rescale_relative_l2": 1.975826080524712e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.0880636738147587e-05,
+        "rescale_relative_l2": 1.9784322091709328e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "24.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.122562909789849e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.3313222957076505e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.122562909789849e-05,
+        "rescale_relative_l2": 2.3251598690876563e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.7092246202519163e-05,
+        "rescale_relative_l2": 2.330270092443243e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "24.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.6556872398941778e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.252689930377528e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.6556872398941778e-05,
+        "rescale_relative_l2": 6.014884661453834e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.849821511423215e-05,
+        "rescale_relative_l2": 6.008061745887971e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "24.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.195460885763168e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.697085362044163e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.195460885763168e-05,
+        "rescale_relative_l2": 2.472677635978471e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.497707651462406e-05,
+        "rescale_relative_l2": 2.4749076033003803e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "24.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.408970431133639e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.793107705656439e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.408970431133639e-05,
+        "rescale_relative_l2": 2.2735058280431986e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.463988681090996e-05,
+        "rescale_relative_l2": 2.2700295687627658e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "24.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.3615846910397522e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.534836155769881e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.3615846910397522e-05,
+        "rescale_relative_l2": 5.920761054767354e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.051408126950264e-05,
+        "rescale_relative_l2": 5.916716645515407e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "24.v_proj": {
+    "alpha": 0.5,
+    "relative_sse": 6.084101914893836e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.394876982085407e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 6.084101914893836e-05,
+        "rescale_relative_l2": 1.2646995628529112e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.0001249540800927207,
+        "rescale_relative_l2": 1.2735060295199219e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "24.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.7987867724732496e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 4.215366061544046e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.7987867724732496e-05,
+        "rescale_relative_l2": 1.940503722153153e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.032599412719719e-05,
+        "rescale_relative_l2": 1.9399188033730752e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "25.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.5323772458941676e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.7926271286560223e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.5323772458941676e-05,
+        "rescale_relative_l2": 2.2004509503403824e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 3.166327587678097e-05,
+        "rescale_relative_l2": 2.2103532160144823e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "25.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8840824597864412e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.365977681824006e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8840824597864412e-05,
+        "rescale_relative_l2": 6.146059376987978e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.663431122433394e-05,
+        "rescale_relative_l2": 6.143496307231544e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "25.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.33373318426311e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 8.293738210340962e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.33373318426311e-05,
+        "rescale_relative_l2": 2.48303052785559e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 9.535468416288495e-05,
+        "rescale_relative_l2": 2.487725225819304e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "25.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.7653582947095856e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.8754988306900486e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.7653582947095856e-05,
+        "rescale_relative_l2": 2.5227612354683515e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011225644266232848,
+        "rescale_relative_l2": 2.4947593146862346e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "25.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.671125937718898e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.8530359739088453e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.671125937718898e-05,
+        "rescale_relative_l2": 5.863101364411705e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.359104736475274e-05,
+        "rescale_relative_l2": 5.864015975021175e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "25.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.638496855273843e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.638496855273843e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.649129550671205e-05,
+        "rescale_relative_l2": 1.1729980542440899e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00014093653589952737,
+        "rescale_relative_l2": 1.1656074150323548e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "25.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.7979871447314508e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.953328268835321e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.7979871447314508e-05,
+        "rescale_relative_l2": 1.9126872530250694e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.154571747174487e-05,
+        "rescale_relative_l2": 1.9140578899623506e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "26.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 9.249680260836612e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.1554304112214595e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 9.249680260836612e-06,
+        "rescale_relative_l2": 1.785992367331346e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 2.0253217371646315e-05,
+        "rescale_relative_l2": 1.8233322407468222e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "26.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.5924311557901092e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.705673589138314e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.5924311557901092e-05,
+        "rescale_relative_l2": 5.719313662666536e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011315399751765653,
+        "rescale_relative_l2": 5.71734801724233e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "26.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.334173743496649e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 6.251543527469039e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.334173743496649e-05,
+        "rescale_relative_l2": 2.5566720296410494e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00012687750859186053,
+        "rescale_relative_l2": 2.556207903126051e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "26.k_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.8423155526979826e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.285954880993813e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.8423155526979826e-05,
+        "rescale_relative_l2": 2.4733850523261935e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00012715821503661573,
+        "rescale_relative_l2": 2.4779279783615493e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "26.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.7987969840760343e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.0843970560235903e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.7987969840760343e-05,
+        "rescale_relative_l2": 5.853315769854817e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.397516699507833e-05,
+        "rescale_relative_l2": 5.855249582964461e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "26.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.5313449188834056e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.5313449188834056e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.989319520769641e-05,
+        "rescale_relative_l2": 1.2218718836720655e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011930328037124127,
+        "rescale_relative_l2": 1.2327689091762295e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "26.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 2.5348213966935873e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.578327959985472e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.5348213966935873e-05,
+        "rescale_relative_l2": 1.8486957742425147e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.178726471262053e-05,
+        "rescale_relative_l2": 1.8466501217062614e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "27.o_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.4799207747273613e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.3549006073153578e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.4799207747273613e-05,
+        "rescale_relative_l2": 2.0526560717826214e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 2.5089058908633888e-05,
+        "rescale_relative_l2": 2.0738315242851968e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "27.down_proj": {
+    "alpha": 0.5,
+    "relative_sse": 5.45041757504805e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.0285033315303735e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 5.45041757504805e-06,
+        "rescale_relative_l2": 2.943703805158293e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00011864108091685921,
+        "rescale_relative_l2": 2.933934126758686e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 8
+  },
+  "27.q_proj": {
+    "alpha": 0.5,
+    "relative_sse": 3.215434844605625e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 5.750734271714464e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 3.215434844605625e-05,
+        "rescale_relative_l2": 2.506420457848435e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00012125376815674827,
+        "rescale_relative_l2": 2.512702508283837e-07
+      }
+    ],
+    "bytes": {
+      "codes": 2359296,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "27.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 2.8010721507598646e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 2.8010721507598646e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 2.9252820240799338e-05,
+        "rescale_relative_l2": 2.486038113147515e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.00013733611558564007,
+        "rescale_relative_l2": 2.4700813128220034e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "27.gate_proj": {
+    "alpha": 0.5,
+    "relative_sse": 9.725597010401543e-06,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 1.5904455722193234e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 9.725597010401543e-06,
+        "rescale_relative_l2": 5.611655069515109e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 5.757723920396529e-05,
+        "rescale_relative_l2": 5.61129922971304e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "27.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 3.534555798978545e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.534555798978545e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 4.0925904613686725e-05,
+        "rescale_relative_l2": 1.1776199926316622e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 0.0001196426383103244,
+        "rescale_relative_l2": 1.1761599694182223e-07
+      }
+    ],
+    "bytes": {
+      "codes": 393216,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  },
+  "27.up_proj": {
+    "alpha": 0.5,
+    "relative_sse": 1.637067543924786e-05,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 3.3170581446029246e-05,
+        "rescale_relative_l2": 0.0
+      },
+      {
+        "alpha": 0.5,
+        "relative_sse": 1.637067543924786e-05,
+        "rescale_relative_l2": 1.4710431628373044e-07
+      },
+      {
+        "alpha": 1.0,
+        "relative_sse": 6.110552203608677e-05,
+        "rescale_relative_l2": 1.4598228403883695e-07
+      }
+    ],
+    "bytes": {
+      "codes": 13762560,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 3072
+    },
+    "bits": 8
+  }
+}

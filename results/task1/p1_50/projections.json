@@ -1,0 +1,982 @@
+{
+  "0.q_proj": {
+    "relative_sse": 0.008012166246771812,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "0.k_proj": {
+    "relative_sse": 0.07411327958106995,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "0.v_proj": {
+    "relative_sse": 0.06367090344429016,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "0.o_proj": {
+    "relative_sse": 0.037588123232126236,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "0.gate_proj": {
+    "relative_sse": 0.032418448477983475,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "0.up_proj": {
+    "relative_sse": 0.05610284581780434,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "0.down_proj": {
+    "relative_sse": 0.05675181373953819,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "1.q_proj": {
+    "relative_sse": 0.03488808497786522,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "1.k_proj": {
+    "relative_sse": 0.031193450093269348,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "1.v_proj": {
+    "relative_sse": 0.05860058590769768,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "1.o_proj": {
+    "relative_sse": 0.08144950866699219,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "1.gate_proj": {
+    "relative_sse": 0.029043804854154587,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "1.up_proj": {
+    "relative_sse": 0.03737424314022064,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "1.down_proj": {
+    "relative_sse": 0.07492750883102417,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "2.q_proj": {
+    "relative_sse": 0.04581882432103157,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "2.k_proj": {
+    "relative_sse": 0.04146300628781319,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "2.v_proj": {
+    "relative_sse": 0.08958495408296585,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "2.o_proj": {
+    "relative_sse": 0.0652434304356575,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "2.gate_proj": {
+    "relative_sse": 0.018905699253082275,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "2.up_proj": {
+    "relative_sse": 0.11301342397928238,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "2.down_proj": {
+    "relative_sse": 0.07300389558076859,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "3.q_proj": {
+    "relative_sse": 0.050218939781188965,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "3.k_proj": {
+    "relative_sse": 0.03753461316227913,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "3.v_proj": {
+    "relative_sse": 0.07859885692596436,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "3.o_proj": {
+    "relative_sse": 0.06256090849637985,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "3.gate_proj": {
+    "relative_sse": 0.013967044651508331,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "3.up_proj": {
+    "relative_sse": 0.11195752769708633,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "3.down_proj": {
+    "relative_sse": 0.07421714812517166,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "4.q_proj": {
+    "relative_sse": 0.06206446886062622,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "4.k_proj": {
+    "relative_sse": 0.04764150083065033,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "4.v_proj": {
+    "relative_sse": 0.07770435512065887,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "4.o_proj": {
+    "relative_sse": 0.06341949850320816,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "4.gate_proj": {
+    "relative_sse": 0.01462764386087656,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "4.up_proj": {
+    "relative_sse": 0.09075094014406204,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "4.down_proj": {
+    "relative_sse": 0.06830614060163498,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "5.q_proj": {
+    "relative_sse": 0.05333002656698227,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "5.k_proj": {
+    "relative_sse": 0.03623171150684357,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "5.v_proj": {
+    "relative_sse": 0.06437285244464874,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "5.o_proj": {
+    "relative_sse": 0.09458515048027039,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "5.gate_proj": {
+    "relative_sse": 0.015243882313370705,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "5.up_proj": {
+    "relative_sse": 0.10946160554885864,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "5.down_proj": {
+    "relative_sse": 0.06705392897129059,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "6.q_proj": {
+    "relative_sse": 0.04308755323290825,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "6.k_proj": {
+    "relative_sse": 0.043717630207538605,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "6.v_proj": {
+    "relative_sse": 0.09277881681919098,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "6.o_proj": {
+    "relative_sse": 0.05823807045817375,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "6.gate_proj": {
+    "relative_sse": 0.02892930991947651,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "6.up_proj": {
+    "relative_sse": 0.08610193431377411,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "6.down_proj": {
+    "relative_sse": 0.06099032610654831,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "7.q_proj": {
+    "relative_sse": 0.05937894433736801,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "7.k_proj": {
+    "relative_sse": 0.03993028774857521,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "7.v_proj": {
+    "relative_sse": 0.09781409054994583,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "7.o_proj": {
+    "relative_sse": 0.07315181195735931,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "7.gate_proj": {
+    "relative_sse": 0.034513555467128754,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "7.up_proj": {
+    "relative_sse": 0.08171291649341583,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "7.down_proj": {
+    "relative_sse": 0.05822177976369858,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "8.q_proj": {
+    "relative_sse": 0.06710395216941833,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "8.k_proj": {
+    "relative_sse": 0.03630904480814934,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "8.v_proj": {
+    "relative_sse": 0.06998056173324585,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "8.o_proj": {
+    "relative_sse": 0.08199028670787811,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "8.gate_proj": {
+    "relative_sse": 0.03136879950761795,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "8.up_proj": {
+    "relative_sse": 0.0854036882519722,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "8.down_proj": {
+    "relative_sse": 0.056980010122060776,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "9.q_proj": {
+    "relative_sse": 0.07901265472173691,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "9.k_proj": {
+    "relative_sse": 0.03926337882876396,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "9.v_proj": {
+    "relative_sse": 0.0635903924703598,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "9.o_proj": {
+    "relative_sse": 0.08322153240442276,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "9.gate_proj": {
+    "relative_sse": 0.034314144402742386,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "9.up_proj": {
+    "relative_sse": 0.08249838650226593,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "9.down_proj": {
+    "relative_sse": 0.0580412894487381,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "10.q_proj": {
+    "relative_sse": 0.06436280161142349,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "10.k_proj": {
+    "relative_sse": 0.029833469539880753,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "10.v_proj": {
+    "relative_sse": 0.055688660591840744,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "10.o_proj": {
+    "relative_sse": 0.11398868262767792,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "10.gate_proj": {
+    "relative_sse": 0.03178324177861214,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "10.up_proj": {
+    "relative_sse": 0.08246080577373505,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "10.down_proj": {
+    "relative_sse": 0.056748539209365845,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "11.q_proj": {
+    "relative_sse": 0.07668257504701614,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "11.k_proj": {
+    "relative_sse": 0.03728322684764862,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "11.v_proj": {
+    "relative_sse": 0.06275001913309097,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "11.o_proj": {
+    "relative_sse": 0.08752170205116272,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "11.gate_proj": {
+    "relative_sse": 0.02580583468079567,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "11.up_proj": {
+    "relative_sse": 0.08285421133041382,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "11.down_proj": {
+    "relative_sse": 0.05833461508154869,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "12.q_proj": {
+    "relative_sse": 0.07391529530286789,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "12.k_proj": {
+    "relative_sse": 0.03842003270983696,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "12.v_proj": {
+    "relative_sse": 0.05846531316637993,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "12.o_proj": {
+    "relative_sse": 0.1033964604139328,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "12.gate_proj": {
+    "relative_sse": 0.03110133297741413,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "12.up_proj": {
+    "relative_sse": 0.0805622860789299,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "12.down_proj": {
+    "relative_sse": 0.06059679388999939,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "13.q_proj": {
+    "relative_sse": 0.07330530136823654,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "13.k_proj": {
+    "relative_sse": 0.0368785485625267,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "13.v_proj": {
+    "relative_sse": 0.05337885394692421,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "13.o_proj": {
+    "relative_sse": 0.07903944700956345,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "13.gate_proj": {
+    "relative_sse": 0.03511057421565056,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "13.up_proj": {
+    "relative_sse": 0.07901591807603836,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "13.down_proj": {
+    "relative_sse": 0.06186634674668312,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "14.q_proj": {
+    "relative_sse": 0.07448287308216095,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "14.k_proj": {
+    "relative_sse": 0.05331675708293915,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "14.v_proj": {
+    "relative_sse": 0.06496302038431168,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "14.o_proj": {
+    "relative_sse": 0.11480306833982468,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "14.gate_proj": {
+    "relative_sse": 0.03175264224410057,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "14.up_proj": {
+    "relative_sse": 0.08073050528764725,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "14.down_proj": {
+    "relative_sse": 0.052301790565252304,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "15.q_proj": {
+    "relative_sse": 0.01180574856698513,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "15.k_proj": {
+    "relative_sse": 0.03437228873372078,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "15.v_proj": {
+    "relative_sse": 0.062469881027936935,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "15.o_proj": {
+    "relative_sse": 0.12323572486639023,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "15.gate_proj": {
+    "relative_sse": 0.03336210548877716,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "15.up_proj": {
+    "relative_sse": 0.08504068106412888,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "15.down_proj": {
+    "relative_sse": 0.05936970189213753,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "16.q_proj": {
+    "relative_sse": 0.08320910483598709,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "16.k_proj": {
+    "relative_sse": 0.03468336537480354,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "16.v_proj": {
+    "relative_sse": 0.07002140581607819,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "16.o_proj": {
+    "relative_sse": 0.1265365481376648,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "16.gate_proj": {
+    "relative_sse": 0.03897587209939957,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "16.up_proj": {
+    "relative_sse": 0.08899985998868942,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "16.down_proj": {
+    "relative_sse": 0.06261076778173447,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "17.q_proj": {
+    "relative_sse": 0.07156318426132202,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "17.k_proj": {
+    "relative_sse": 0.036927878856658936,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "17.v_proj": {
+    "relative_sse": 0.0679021030664444,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "17.o_proj": {
+    "relative_sse": 0.08753876388072968,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "17.gate_proj": {
+    "relative_sse": 0.03572608530521393,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "17.up_proj": {
+    "relative_sse": 0.09021855145692825,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "17.down_proj": {
+    "relative_sse": 0.06595328450202942,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "18.q_proj": {
+    "relative_sse": 0.0875169038772583,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "18.k_proj": {
+    "relative_sse": 0.04378502815961838,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "18.v_proj": {
+    "relative_sse": 0.07291305065155029,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "18.o_proj": {
+    "relative_sse": 0.10940471291542053,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "18.gate_proj": {
+    "relative_sse": 0.03646572306752205,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "18.up_proj": {
+    "relative_sse": 0.08634884655475616,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "18.down_proj": {
+    "relative_sse": 0.06833554059267044,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "19.q_proj": {
+    "relative_sse": 0.08677393943071365,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "19.k_proj": {
+    "relative_sse": 0.04360255226492882,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "19.v_proj": {
+    "relative_sse": 0.07040934264659882,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "19.o_proj": {
+    "relative_sse": 0.09705359488725662,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "19.gate_proj": {
+    "relative_sse": 0.031041450798511505,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "19.up_proj": {
+    "relative_sse": 0.0844738632440567,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "19.down_proj": {
+    "relative_sse": 0.06004920229315758,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "20.q_proj": {
+    "relative_sse": 0.08894360065460205,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "20.k_proj": {
+    "relative_sse": 0.03517921268939972,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "20.v_proj": {
+    "relative_sse": 0.06604121625423431,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "20.o_proj": {
+    "relative_sse": 0.07543835043907166,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "20.gate_proj": {
+    "relative_sse": 0.03427252918481827,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "20.up_proj": {
+    "relative_sse": 0.08663368970155716,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "20.down_proj": {
+    "relative_sse": 0.06915841996669769,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "21.q_proj": {
+    "relative_sse": 0.09695981442928314,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "21.k_proj": {
+    "relative_sse": 0.03898341581225395,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "21.v_proj": {
+    "relative_sse": 0.1178063228726387,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "21.o_proj": {
+    "relative_sse": 0.08692073822021484,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "21.gate_proj": {
+    "relative_sse": 0.03281909599900246,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "21.up_proj": {
+    "relative_sse": 0.08283055573701859,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "21.down_proj": {
+    "relative_sse": 0.06900274753570557,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "22.q_proj": {
+    "relative_sse": 0.10100717097520828,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "22.k_proj": {
+    "relative_sse": 0.04125041887164116,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "22.v_proj": {
+    "relative_sse": 0.0707206279039383,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "22.o_proj": {
+    "relative_sse": 0.07180581986904144,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "22.gate_proj": {
+    "relative_sse": 0.03304829075932503,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "22.up_proj": {
+    "relative_sse": 0.0851389616727829,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "22.down_proj": {
+    "relative_sse": 0.06300778687000275,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "23.q_proj": {
+    "relative_sse": 0.12889452278614044,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "23.k_proj": {
+    "relative_sse": 0.046293873339891434,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "23.v_proj": {
+    "relative_sse": 0.07539336383342743,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "23.o_proj": {
+    "relative_sse": 0.15583139657974243,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "23.gate_proj": {
+    "relative_sse": 0.030217153951525688,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "23.up_proj": {
+    "relative_sse": 0.08995912224054337,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "23.down_proj": {
+    "relative_sse": 0.06305883824825287,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "24.q_proj": {
+    "relative_sse": 0.10049344599246979,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "24.k_proj": {
+    "relative_sse": 0.04463382810354233,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "24.v_proj": {
+    "relative_sse": 0.03283090144395828,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "24.o_proj": {
+    "relative_sse": 0.11983921378850937,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "24.gate_proj": {
+    "relative_sse": 0.03359917178750038,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "24.up_proj": {
+    "relative_sse": 0.08637285232543945,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "24.down_proj": {
+    "relative_sse": 0.06698907166719437,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "25.q_proj": {
+    "relative_sse": 0.1334870308637619,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "25.k_proj": {
+    "relative_sse": 0.042444225400686264,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "25.v_proj": {
+    "relative_sse": 0.025165658444166183,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "25.o_proj": {
+    "relative_sse": 0.08070201426744461,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "25.gate_proj": {
+    "relative_sse": 0.04090867191553116,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "25.up_proj": {
+    "relative_sse": 0.08067606389522552,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "25.down_proj": {
+    "relative_sse": 0.06906799226999283,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "26.q_proj": {
+    "relative_sse": 0.09421870857477188,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "26.k_proj": {
+    "relative_sse": 0.039227452129125595,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "26.v_proj": {
+    "relative_sse": 0.028960932046175003,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "26.o_proj": {
+    "relative_sse": 0.10049889236688614,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "26.gate_proj": {
+    "relative_sse": 0.04502718895673752,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "26.up_proj": {
+    "relative_sse": 0.076473169028759,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "26.down_proj": {
+    "relative_sse": 0.07596923410892487,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "27.q_proj": {
+    "relative_sse": 0.08325349539518356,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "27.k_proj": {
+    "relative_sse": 0.03314308822154999,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "27.v_proj": {
+    "relative_sse": 0.028552571311593056,
+    "mask_zeros": 196608,
+    "sparsity": 0.5
+  },
+  "27.o_proj": {
+    "relative_sse": 0.11409030854701996,
+    "mask_zeros": 1179648,
+    "sparsity": 0.5
+  },
+  "27.gate_proj": {
+    "relative_sse": 0.04455379396677017,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "27.up_proj": {
+    "relative_sse": 0.06833940744400024,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  },
+  "27.down_proj": {
+    "relative_sse": 0.04098048806190491,
+    "mask_zeros": 6881280,
+    "sparsity": 0.5
+  }
+}

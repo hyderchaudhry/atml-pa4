@@ -1,0 +1,3530 @@
+{
+  "0.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.035798776894807816,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.035798776894807816,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.038469742983579636,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.038469742983579636,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.002981841331347823,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.002981841331347823,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.051372937858104706,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.051372937858104706,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.01680048555135727,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.01680048555135727,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.051966916769742966,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.051966916769742966,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "0.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03893787041306496,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03893787041306496,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05628063157200813,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05628063157200813,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0545731782913208,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0545731782913208,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.021636556833982468,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.021636556833982468,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.018119193613529205,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.018119193613529205,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.008139568381011486,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.008139568381011486,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.038204871118068695,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.038204871118068695,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "1.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03157408535480499,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03157408535480499,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043070487678050995,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043070487678050995,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05444381386041641,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05444381386041641,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03133648261427879,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03133648261427879,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02548174187541008,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02548174187541008,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.007729739416390657,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.007729739416390657,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05361597612500191,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05361597612500191,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "2.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08735069632530212,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08735069632530212,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04274337366223335,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04274337366223335,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05410037562251091,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05410037562251091,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.029048558324575424,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.029048558324575424,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.023351266980171204,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.023351266980171204,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.007791146636009216,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.007791146636009216,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06313066184520721,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06313066184520721,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "3.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0933656394481659,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0933656394481659,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04495498538017273,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04495498538017273,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05092664062976837,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05092664062976837,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.034001804888248444,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.034001804888248444,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.029481153935194016,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.029481153935194016,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.009129667654633522,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.009129667654633522,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.060659244656562805,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.060659244656562805,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "4.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07331719994544983,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07331719994544983,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06909284740686417,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06909284740686417,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0480315163731575,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0480315163731575,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.033620040863752365,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.033620040863752365,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.033770959824323654,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.033770959824323654,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.007692218758165836,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.007692218758165836,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.059744350612163544,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.059744350612163544,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "5.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08483617007732391,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08483617007732391,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.049396976828575134,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.049396976828575134,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04502232372760773,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04502232372760773,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02865651622414589,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02865651622414589,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.034401316195726395,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.034401316195726395,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.016508052125573158,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.016508052125573158,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0799967423081398,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0799967423081398,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "6.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06253822892904282,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06253822892904282,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0528629906475544,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0528629906475544,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04583711177110672,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04583711177110672,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03239442780613899,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03239442780613899,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.023542575538158417,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.023542575538158417,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.019258063286542892,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.019258063286542892,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06521842628717422,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06521842628717422,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "7.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06074904650449753,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06074904650449753,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05939237028360367,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05939237028360367,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04287092760205269,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04287092760205269,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04191065579652786,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04191065579652786,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.025176024064421654,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.025176024064421654,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.01756325364112854,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.01756325364112854,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.054965466260910034,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.054965466260910034,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "8.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06184622645378113,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06184622645378113,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.058561693876981735,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.058561693876981735,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0440065823495388,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0440065823495388,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04544297978281975,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04544297978281975,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02730199694633484,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02730199694633484,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.01964528113603592,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.01964528113603592,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04830996319651604,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04830996319651604,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "9.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05857028439640999,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05857028439640999,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07528863102197647,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07528863102197647,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.045317392796278,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.045317392796278,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03848998248577118,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03848998248577118,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02369942143559456,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02369942143559456,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.018436340615153313,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.018436340615153313,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.050749875605106354,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.050749875605106354,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "10.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05869782343506813,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05869782343506813,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06161262467503548,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06161262467503548,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0441560335457325,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0441560335457325,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.041998691856861115,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.041998691856861115,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.022252196446061134,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.022252196446061134,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.01476981956511736,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.01476981956511736,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05365820601582527,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05365820601582527,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "11.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05857989192008972,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05857989192008972,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07082349061965942,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07082349061965942,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04813419282436371,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04813419282436371,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043925344944000244,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043925344944000244,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.031984832137823105,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.031984832137823105,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.018233081325888634,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.018233081325888634,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043254416435956955,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043254416435956955,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "12.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.057673558592796326,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.057673558592796326,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04914208874106407,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04914208874106407,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04696488752961159,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04696488752961159,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.040368709713220596,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.040368709713220596,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02346561662852764,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02346561662852764,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.019894711673259735,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.019894711673259735,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.042646218091249466,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.042646218091249466,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "13.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.055844809859991074,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.055844809859991074,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07880072295665741,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07880072295665741,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.044832661747932434,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.044832661747932434,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05191647633910179,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05191647633910179,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.030112851411104202,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.030112851411104202,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02004372328519821,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02004372328519821,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05324798449873924,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05324798449873924,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "14.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05871417000889778,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05871417000889778,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08310574293136597,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08310574293136597,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04690532758831978,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04690532758831978,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.008823326788842678,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.008823326788842678,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02412407286465168,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02412407286465168,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.020027952268719673,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.020027952268719673,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.051588770002126694,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.051588770002126694,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "15.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05931200832128525,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05931200832128525,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08866793662309647,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08866793662309647,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04984711483120918,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04984711483120918,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05098632350564003,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05098632350564003,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.025440597906708717,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.025440597906708717,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02248605713248253,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02248605713248253,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05391804501414299,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05391804501414299,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "16.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06500095129013062,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06500095129013062,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05870961770415306,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05870961770415306,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05083458125591278,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05083458125591278,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0446634516119957,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0446634516119957,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02534561976790428,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02534561976790428,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02185729891061783,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02185729891061783,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05437444522976875,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05437444522976875,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "17.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06428209692239761,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06428209692239761,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07204683125019073,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07204683125019073,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.053821150213479996,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.053821150213479996,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04991642013192177,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04991642013192177,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.028013577684760094,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.028013577684760094,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02361849509179592,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02361849509179592,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05345643684267998,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05345643684267998,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "18.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.061068445444107056,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.061068445444107056,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0751476138830185,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0751476138830185,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.051522765308618546,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.051522765308618546,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05359664931893349,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05359664931893349,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.029354916885495186,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.029354916885495186,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.021073484793305397,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.021073484793305397,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08026573807001114,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08026573807001114,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "19.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06031198427081108,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06031198427081108,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06313226372003555,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06313226372003555,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05100300908088684,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05100300908088684,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06611655652523041,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06611655652523041,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.027067681774497032,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.027067681774497032,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02217542566359043,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02217542566359043,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07893165200948715,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07893165200948715,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "20.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05792311206459999,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05792311206459999,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04336438700556755,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04336438700556755,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.050727710127830505,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.050727710127830505,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06441580504179001,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06441580504179001,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0306942667812109,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0306942667812109,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02021319605410099,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02021319605410099,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.09558548033237457,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.09558548033237457,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "21.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.054931916296482086,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.054931916296482086,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.052278902381658554,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.052278902381658554,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04603618383407593,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04603618383407593,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06681542098522186,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06681542098522186,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.034178491681814194,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.034178491681814194,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.01949704810976982,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.01949704810976982,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08735456317663193,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08735456317663193,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "22.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05598749965429306,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05598749965429306,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08110982179641724,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08110982179641724,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043724220246076584,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043724220246076584,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08365760743618011,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08365760743618011,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03836797922849655,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03836797922849655,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.018306341022253036,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.018306341022253036,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.08784140646457672,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.08784140646457672,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "23.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.057580962777137756,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.057580962777137756,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.058300379663705826,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.058300379663705826,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043159760534763336,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043159760534763336,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07453521341085434,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07453521341085434,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.037545327097177505,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.037545327097177505,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02026418223977089,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02026418223977089,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.062606081366539,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.062606081366539,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "24.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05421159788966179,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05421159788966179,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06278830021619797,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06278830021619797,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.044294573366642,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.044294573366642,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.09331722557544708,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.09331722557544708,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.03905554860830307,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.03905554860830307,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.02474108524620533,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.02474108524620533,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.043907418847084045,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.043907418847084045,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "25.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.05153980478644371,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.05153980478644371,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.07386955618858337,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.07386955618858337,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04807353392243385,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04807353392243385,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0736648440361023,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0736648440361023,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.039523590356111526,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.039523590356111526,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.027232229709625244,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.027232229709625244,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0403674840927124,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0403674840927124,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "26.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.04683117941021919,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.04683117941021919,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.o_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.059888798743486404,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.059888798743486404,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.down_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.025487327948212624,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.025487327948212624,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.q_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.06726056337356567,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.06726056337356567,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 884736,
+      "group_scales": 36864,
+      "zero_points": 18432,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.k_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.035497672855854034,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.035497672855854034,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.gate_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.021387189626693726,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.021387189626693726,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.v_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.042206116020679474,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.042206116020679474,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 147456,
+      "group_scales": 6144,
+      "zero_points": 3072,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  },
+  "27.up_proj": {
+    "alpha": 0.0,
+    "relative_sse": 0.0418224036693573,
+    "grid": [
+      {
+        "alpha": 0.0,
+        "relative_sse": 0.0418224036693573,
+        "rescale_relative_l2": 0.0
+      }
+    ],
+    "bytes": {
+      "codes": 5160960,
+      "group_scales": 215040,
+      "zero_points": 107520,
+      "inverse_scales": 0
+    },
+    "bits": 3
+  }
+}

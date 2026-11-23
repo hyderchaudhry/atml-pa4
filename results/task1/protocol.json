@@ -1,0 +1,123 @@
+{
+  "seed": 6304,
+  "sources": {
+    "repos": {
+      "c4": "allenai/c4",
+      "wikitext": "Salesforce/wikitext",
+      "hellaswag": "Rowan/hellaswag",
+      "gsm8k": "openai/gsm8k",
+      "model_base": "Qwen/Qwen2.5-1.5B",
+      "model_target": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_draft": "Qwen/Qwen2.5-0.5B-Instruct"
+    },
+    "revisions": {
+      "c4": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
+      "wikitext": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "hellaswag": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "gsm8k": "740312add88f781978c0658806c59bc2815b9866",
+      "model_base": "8faed761d45a263340a0528343f099c05c9a4323",
+      "model_target": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "model_draft": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  },
+  "course_commit": "6a0a9ec9da7ef3d313ee3036cfec493886723644",
+  "assets_sha256": {
+    "c4_calibration": "eaa0452a7b6830b665debecc5df6960876bc7d3ad89ced339bcfc85fa4db6fe3",
+    "c4_development": "85b71a7beeaaf06ea84d99510b4414f50d3a9fc3ddee6c15c1f52c2be3d5f7e2",
+    "c4_validation_windows": "dd36c6eefb4a4f06b9606e28e5135556389ce98d9f86598a6b61fec3f292e8b5",
+    "wikitext2_test_windows": "879b5c741918fa58f5ce929e61a0ac83e4acf97d368d3a4f1b456e711fc560b3",
+    "hellaswag_val": "8686d379fe103478679199c744fa6779e4014d70f2af3941f64a3215dc677feb"
+  },
+  "code_sha256": {
+    "task1/calibration.py": "436ff2e276146959d6eb2a77a4719eb2bb94e169914b33787dcde7dda7b9dc71",
+    "task1/run.py": "8c980f176e9b18460de8303c76bad4f92742c370b4b9a3252748477bd84d0f6f",
+    "task1/data.py": "3e6c67f15b7d16bd13f5f0a66974794b95fff05e832ecd677c744dbd61bcc844",
+    "task1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task1/quality.py": "000751451ac79977ef0efa36e6eed8875d751b8a44cbc0e49df366eb81161a23",
+    "task1/protocol.py": "914837f5fe6209ebe82fce6301aaf16701b749f07d3da649ddd2284c8fc6c30c",
+    "task1/evaluation.py": "209e489815ae729edf217480335db40d4997862b7b9d14a2f0f0bd5302adf56a",
+    "task1/study.py": "a21e7524eac8a4a4910975784e12001fe2aa04e2af1ad6925921a73ab00520c9",
+    "task1/reporting.py": "faccd2980f52f57fc369dd604a71447930c45871e24e1d50320a43eec6db18fb",
+    "task1/quantization.py": "a212ca3af7f2292acdd4753aac80c3a9012ad0b632f4935a191939afc7a32410",
+    "task1/pruning.py": "904f27aa3039a2f5495dc7300eb6d155848a02225e731b37388c7d7b47c12208",
+    "common/runtime.py": "69f8a386f463bbf11c4ebc7a350d2b9d4a8fd0b9f812b58e0c2be78b42435e29",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/setup.py": "141a07c9c338a61d0fd935eeb9031f7f2e539b274f4de4402048629fbaf90a8d"
+  },
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.1",
+    "huggingface_hub": "0.36.2",
+    "datasets": "4.8.5",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0"
+  },
+  "python": "3.13.16",
+  "cuda": "13.0",
+  "gpu": "Tesla T4",
+  "attention_backend": "sdpa",
+  "precision": "float16",
+  "tf32": false,
+  "model": "Qwen/Qwen2.5-1.5B",
+  "tokenizer": "Qwen/Qwen2.5-1.5B (fast)",
+  "group_size": 128,
+  "awq_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "p3_strengths": [
+    0.25,
+    0.5
+  ],
+  "p3_criterion": "lowest pooled development NLL, first candidate breaks ties",
+  "q3_criterion": "minimum summed projection relative SSE under uniform packed budget; mixed blocks",
+  "bits": [
+    2,
+    3,
+    4,
+    8
+  ],
+  "calibration_positions": [
+    31,
+    159,
+    287,
+    415
+  ],
+  "warmups": 2,
+  "repetitions": 5,
+  "timing_prompt": "first four calibration windows concatenated",
+  "conditions": [
+    "fp16",
+    "p1_25",
+    "p1_50",
+    "p1_75",
+    "p2_25",
+    "p2_50",
+    "p2_75",
+    "p3_50",
+    "p3_75",
+    "q1_8",
+    "q1_4",
+    "q1_3",
+    "q2_8",
+    "q2_4",
+    "q2_3",
+    "q3_4",
+    "q3_3",
+    "wanda_2of4_50"
+  ],
+  "hellaswag": {
+    "task": "lm-evaluation-harness v0.4.8, hellaswag 1.0, zero-shot",
+    "query": "clean(activity_label + \": \" + ctx_a + \" \" + ctx_b.capitalize())",
+    "target": "one space + clean(ending)",
+    "normalizer": "len(clean(ending))",
+    "full": 2000,
+    "diagnostic": "first 512 in manifest order"
+  },
+  "quality_devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "benchmark_device": "cuda:0"
+}
